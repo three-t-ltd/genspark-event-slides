@@ -62,3 +62,19 @@
 .is-active .prog{transform-origin:left;animation:grow .9s ease-out both}
 .static .a{opacity:1!important;animation:none!important}
 .static *{animation-play-state:paused!important}
+
+/* ===== 自己紹介の経歴タイムライン（3枚目 p_intro・2026-09-29追加） ===== */
+.tl-now{position:absolute;top:-30px;bottom:0;width:0;border-left:6px dashed var(--y)}
+.tl-now span{position:absolute;left:-60px;top:-44px;width:120px;text-align:center;font-family:var(--en);font-size:30px;letter-spacing:.12em;color:var(--y)}
+.tl-bar{position:absolute;height:64px;background:rgba(255,255,255,.3);border-radius:0 6px 6px 0;transform-origin:left center;display:flex;align-items:center}
+.tl-bar.on{border-radius:0;background:repeating-linear-gradient(-45deg,var(--y) 0 26px,#ffe98f 26px 52px);background-size:74px 74px;
+  clip-path:polygon(0 0,calc(100% - 40px) 0,100% 50%,calc(100% - 40px) 100%,0 100%)}
+.tl-yr{padding-left:22px;font-family:var(--en);font-size:40px;color:#fff;white-space:nowrap}
+.tl-yr small{font-family:"YuGothic","Yu Gothic",sans-serif;font-weight:900;font-size:28px;margin-left:4px}
+.tl-bar.on .tl-yr{color:var(--k)}
+.tl-tag{display:inline-block;margin-left:18px;padding:4px 16px;font-size:26px;font-weight:900;background:var(--y);color:var(--k);border-radius:999px;vertical-align:4px}
+@keyframes tlflow{from{background-position:0 0}to{background-position:74px 0}}
+@keyframes tlglow{0%,100%{box-shadow:0 0 0 0 rgba(245,208,32,.7)}50%{box-shadow:0 0 0 14px rgba(245,208,32,0)}}
+.is-active .tl-bar{animation:grow 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--dl,0s)}
+.is-active .tl-bar.on{animation:grow 1s cubic-bezier(.2,.8,.2,1) both,tlflow 1.2s linear infinite;animation-delay:var(--dl,0s),var(--dl,0s)}
+.is-active .tl-tag{animation:tlglow 1.6s ease-in-out infinite}
