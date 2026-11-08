@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>あなた専用「スライドをつくる専用エージェント」のつくり方 | Genspark Meetup in 熊本</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lime:#D9FF00; --dark:#232425; --blue:#0F7FFF;
+  --ink:#232425; --muted:#6B7280; --line:#E1E5EB; --bg:#F7F8FA;
+  --font-display:'Outfit','Noto Sans JP','Hiragino Sans',sans-serif;
+  --font-sans:'Noto Sans JP','Hiragino Sans','Yu Gothic UI','Meiryo',sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-sans);
+  font-size:16px;line-height:1.85;letter-spacing:.01em;}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 72px}
+header{background:var(--dark);color:#fff;padding:40px 20px 32px;margin-bottom:32px}
+header .inner{max-width:720px;margin:0 auto}
+.eyebrow{font-family:var(--font-display);font-size:12px;letter-spacing:.12em;
+  color:var(--lime);margin:0 0 14px;text-transform:uppercase}
+header h1{font-size:clamp(22px,5.6vw,30px);line-height:1.45;margin:0 0 16px;font-weight:700}
+header .by{margin:0;font-size:14px;color:#A8AEB8;line-height:1.7}
+.lead{font-size:16px;margin:0 0 32px}
+.lead strong{background:linear-gradient(transparent 62%,var(--lime) 62%);font-weight:700}
+h2{font-size:19px;font-weight:700;margin:40px 0 14px;padding-left:12px;
+  border-left:5px solid var(--blue);line-height:1.5}
+ol,ul{padding-left:1.4em;margin:0 0 18px}
+li{margin-bottom:10px}
+.note{background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px;margin:18px 0;font-size:15px}
+.note strong{font-weight:700}
+.codewrap{position:relative;margin:18px 0 28px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  background:var(--dark);color:#C9CDD3;border-radius:12px 12px 0 0;
+  padding:10px 14px;font-size:13px;font-family:var(--font-display);letter-spacing:.04em}
+button#copy{appearance:none;border:0;cursor:pointer;background:var(--lime);color:var(--dark);
+  font-family:var(--font-sans);font-weight:700;font-size:14px;border-radius:8px;
+  padding:9px 18px;white-space:nowrap;min-height:40px}
+button#copy:active{transform:translateY(1px)}
+button#copy.done{background:#fff}
+pre{margin:0;background:#2f3236;color:#E7E9EC;border-radius:0 0 12px 12px;
+  padding:18px 16px;overflow-x:auto;font-size:13.5px;line-height:1.8;
+  font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,'Noto Sans JP',monospace;
+  white-space:pre-wrap;word-break:break-word;-webkit-user-select:text;user-select:text}
+pre mark{background:var(--lime);color:var(--dark);padding:0 2px;border-radius:2px}
+.example{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 18px 2px}
+.example li{color:var(--ink)}
+.cautions{counter-reset:c;list-style:none;padding:0}
+.cautions li{position:relative;padding-left:44px;margin-bottom:16px}
+.cautions li::before{counter-increment:c;content:counter(c);position:absolute;left:0;top:2px;
+  width:30px;height:30px;border-radius:8px;background:var(--dark);color:var(--lime);
+  font-family:var(--font-display);font-weight:700;font-size:15px;
+  display:flex;align-items:center;justify-content:center}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:22px;
+  color:var(--muted);font-size:13.5px;line-height:1.8}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+</style>
+</head>
+<body>
+<header><div class="inner">
+  <p class="eyebrow">Genspark Meetup in 熊本 / 2026.11.09</p>
+  <h1>あなた専用<br>「スライドをつくる専用エージェント」のつくり方</h1>
+  <p class="by">上津原 研介（three.T合同会社）</p>
+</div></header>
+
+<div class="wrap">
+
+<p class="lead">毎回ゼロから頼むと、毎回ちがうものが出てきます。一度これを貼って自分専用のエージェントを作っておけば、次からは<strong>テーマを渡して、構成にOKを出すだけ</strong>になります。</p>
+
+<h2>手順（3分）</h2>
+<ol>
+  <li>Genspark にログインし、エージェントを新しく作る（当日、画面でお見せします）</li>
+  <li>「指示（Instructions）」の欄に、下の枠の中身をそのままコピーして貼る</li>
+  <li>指示文の中の〈ここを書き換える〉の3か所（会社・色・枚数）を自分用に書き換えて保存</li>
+  <li>使うときは、そのエージェントに「〇〇のスライドを作って」と送る</li>
+  <li>最初に3つだけ聞かれます（<strong>誰に見せるか／何をしてほしいか／使う場面</strong>）。答えると構成案が出るので、OKを出す</li>
+</ol>
+
+<div class="note"><strong>うまくいったサイン</strong>：構成案にOKを出したあと、ブラウザで開けるスライドのリンクが返ってくる。</div>
+
+<hr>
+
+<h2>貼りつける指示文</h2>
+<div class="codewrap">
+  <div class="bar"><span>Instructions にそのまま貼る</span><button id="copy" type="button">コピー</button></div>
+<pre id="instr">あなたは、私の登壇・商談用スライドをつくる係です。
+
+【役割】
+・私が渡したテーマから、ブラウザで開く1ファイル完結のHTMLスライドを作る
+・動き（アニメーション）を最初から入れる
+・作ったら、見るためのURLにして渡す
+
+【私の型】
+・会社／肩書：<mark>〈ここを書き換える：株式会社〇〇 代表〉</mark>
+・色：背景は白、文字は黒、目立たせる色は<mark>〈ここを書き換える：#D9FF00〉</mark>の1色だけ
+・1枚につきメッセージはひとつ。文字は大きく、要素は少なく
+・枚数：<mark>〈ここを書き換える：10枚〉</mark>。表紙・中身・締めの3部構成
+・最初の1枚は「誰が、何の話をするか」だけ
+・最後の1枚は「次に相手にしてほしいこと」をひとつ
+
+【やらないこと】
+・1枚に文章を詰め込む（箇条書きは1枚4行まで）
+・私が渡していない数字・実績・社名を書く（分からないときは私に質問する）
+・動きを派手にする（出てくる・下線が伸びる程度でよい）
+・専門用語をそのまま使う（聞いて分かる日本語に置き換える）
+
+【進め方】
+1. テーマを受け取ったら、不明点を最大3つだけ私に質問する
+2. 構成（各ページの見出しだけ）を先に出して、私の「OK」を待つ
+3. OKが出てからHTMLを作る
+4. 作ったあとに、崩れやすそうな箇所（長い見出し・表・画像）を一覧で出す。最終確認は私が自分の目でする</pre>
+</div>
+
+<h2>使うときの言い方（例）</h2>
+<ul class="example">
+  <li>「来週の経営会議用に、今期の方針を10枚で」</li>
+  <li>「このPowerPointを、動くHTMLに作り直して」（ファイルを添付）</li>
+  <li>「3枚目の箇条書きを順番に出るようにして」</li>
+  <li>「目立たせる色を青に変えて」</li>
+</ul>
+
+<h2>気をつける3つ</h2>
+<ul class="cautions">
+  <li><strong>スマホや小さい画面で崩れる</strong> — 本番で使う画面で一度は開く</li>
+  <li><strong>PDFやPowerPointに書き出すと動きは消える</strong> — 配る用と見せる用は分けて考える</li>
+  <li><strong>直すたびにクレジットを使う</strong> — 最初の1回の指示に、希望をまとめて書くのが一番安い</li>
+</ul>
+
+<footer>
+  困ったときの聞き先は、当日ご案内します。<br>
+  Genspark Meetup in 熊本（2026.11.09）／上津原 研介・three.T合同会社
+</footer>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('copy');
+  var pre = document.getElementById('instr');
+  function text(){ return pre.innerText.replace(/ /g,' '); }
+  function flash(msg){ var o=btn.textContent; btn.textContent=msg; btn.classList.add('done');
+    setTimeout(function(){ btn.textContent='コピー'; btn.classList.remove('done'); }, 1800); }
+  btn.addEventListener('click', function(){
+    var t = text();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(t).then(function(){ flash('コピーしました'); },
+        function(){ fallback(t); });
+    } else { fallback(t); }
+  });
+  function fallback(t){
+    var ta=document.createElement('textarea'); ta.value=t;
+    ta.style.position='fixed'; ta.style.top='-1000px'; document.body.appendChild(ta);
+    ta.focus(); ta.select(); ta.setSelectionRange(0, t.length);
+    var ok=false; try{ ok=document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(ta);
+    flash(ok ? 'コピーしました' : '長押しで選択してコピー');
+  }
+})();
+</script>
+</body>
+</html>
