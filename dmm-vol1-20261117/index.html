@@ -473,6 +473,56 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 </head>
 <body>
 <div class="slide" data-i="0">
+<div class="slide-container grid-lines" data-screen-label="03 Cover" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- ambient glow, bottom-right -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1180px; top:560px; width:900px; height:900px; z-index:1; background:radial-gradient(circle at 50% 50%, rgba(216,243,78,0.16) 0%, rgba(216,243,78,0.05) 34%, transparent 68%);"></div>
+
+  <!-- thin top hairline -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:0; top:0; width:1920px; height:3px; background:linear-gradient(90deg, rgba(216,243,78,0) 0%, rgba(216,243,78,0.9) 55%, rgba(216,243,78,0) 100%); z-index:5;"></div>
+
+  <!-- eyebrow -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:96px; width:1200px; z-index:10; font-family:var(--mono); font-size:22px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    Genspark Official Lecture
+  </div>
+
+  <!-- night-to-dawn phase arc, top-right -->
+  <svg data-object="true" data-object-type="icon" style="position:absolute; left:1330px; top:230px; width:494px; height:150px; z-index:2;" viewBox="0 0 494 150">
+    <path d="M 14 128 Q 247 -34 480 128" fill="none" stroke="rgba(237,234,226,0.14)" stroke-width="1.5" stroke-dasharray="4 9"/>
+    <circle cx="14" cy="128" r="5" fill="rgba(138,184,255,0.55)"/>
+    <circle cx="118" cy="66" r="4" fill="rgba(237,234,226,0.25)"/>
+    <circle cx="222" cy="38" r="4" fill="rgba(237,234,226,0.3)"/>
+    <circle cx="330" cy="44" r="5" fill="rgba(216,243,78,0.45)"/>
+    <circle cx="480" cy="128" r="8" fill="#D8F34E"/>
+    <circle cx="480" cy="128" r="16" fill="none" stroke="rgba(216,243,78,0.35)" stroke-width="1.5"/>
+  </svg>
+
+  <!-- series tag -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:150px; width:1400px; z-index:10; font-family:var(--jp); font-size:30px; font-weight:500; letter-spacing:0.06em; color:rgba(237,234,226,0.72);">
+    【Genspark公式講座】最新機能解説シリーズ <span style="color:var(--lime); font-weight:700;">vol.1</span>
+  </div>
+
+  <!-- hero line 1 -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:92px; top:430px; width:1740px; z-index:10; font-family:var(--jp); font-size:118px; font-weight:900; line-height:1.02; letter-spacing:-0.01em; color:var(--paper);">
+    常時稼働型<br>AIエージェントで
+  </div>
+
+  <!-- hero line 2 : the hanging clause -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:756px; width:1740px; z-index:10; font-family:var(--jp); font-size:150px; font-weight:900; line-height:1; letter-spacing:-0.015em; color:var(--lime);">
+    寝てる間に<span style="color:rgba(237,234,226,0.35);">——</span>
+  </div>
+
+  <!-- bottom meta row -->
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:984px; width:900px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.28em; text-transform:uppercase; color:var(--muted);">
+    DMM学び放題 × Genspark
+  </div>
+
+  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1360px; top:984px; width:464px; z-index:10; text-align:right; font-family:var(--mono); font-size:19px; letter-spacing:0.28em; text-transform:uppercase; color:var(--muted);">
+    Always-On Agent
+  </div>
+
+</div>
+</div><div class="slide" data-i="1">
 <div class="slide-container sc" data-screen-label="01 Poll — which AI" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
 
   <!-- glow -->
@@ -481,7 +531,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- LIVE tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:88px; width:900px; z-index:10; display:flex; align-items:center; gap:20px;">
     <div class="live" style="width:16px; height:16px; border-radius:50%; background:var(--lime); box-shadow:0 0 24px rgba(216,243,78,0.8); flex:none;"></div>
-    <div style="font-family:var(--mono); font-size:24px; letter-spacing:0.42em; text-transform:uppercase; color:var(--lime);">Live Poll</div>
+    <div style="font-family:var(--mono); font-size:24px; letter-spacing:0.42em; text-transform:uppercase; color:var(--lime);">みなさんに質問</div>
   </div>
 
   <!-- ghost Q mark -->
@@ -533,11 +583,11 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:96px; top:984px; width:1400px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Vote &middot; one tap &middot; watch it land
+    ひとつ選んで、タップしてください
   </div>
 
 </div>
-</div><div class="slide" data-i="1">
+</div><div class="slide" data-i="2">
 <div class="slide-container sc" data-screen-label="02 Poll — which tool" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
 
   <!-- glow -->
@@ -546,7 +596,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- LIVE tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:88px; width:900px; z-index:10; display:flex; align-items:center; gap:20px;">
     <div class="live" style="width:16px; height:16px; border-radius:50%; background:var(--lime); box-shadow:0 0 24px rgba(216,243,78,0.8); flex:none;"></div>
-    <div style="font-family:var(--mono); font-size:24px; letter-spacing:0.42em; text-transform:uppercase; color:var(--lime);">Live Poll</div>
+    <div style="font-family:var(--mono); font-size:24px; letter-spacing:0.42em; text-transform:uppercase; color:var(--lime);">みなさんに質問</div>
   </div>
 
   <!-- ghost hash, right -->
@@ -598,508 +648,11 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:96px; top:984px; width:1400px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Where your team already talks
-  </div>
-
-</div>
-</div><div class="slide" data-i="2">
-<div class="slide-container grid-lines" data-screen-label="03 Cover" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- ambient glow, bottom-right -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1180px; top:560px; width:900px; height:900px; z-index:1; background:radial-gradient(circle at 50% 50%, rgba(216,243,78,0.16) 0%, rgba(216,243,78,0.05) 34%, transparent 68%);"></div>
-
-  <!-- thin top hairline -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:0; top:0; width:1920px; height:3px; background:linear-gradient(90deg, rgba(216,243,78,0) 0%, rgba(216,243,78,0.9) 55%, rgba(216,243,78,0) 100%); z-index:5;"></div>
-
-  <!-- eyebrow -->
-  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:96px; width:1200px; z-index:10; font-family:var(--mono); font-size:22px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Genspark Official Lecture
-  </div>
-
-  <!-- night-to-dawn phase arc, top-right -->
-  <svg data-object="true" data-object-type="icon" style="position:absolute; left:1330px; top:230px; width:494px; height:150px; z-index:2;" viewBox="0 0 494 150">
-    <path d="M 14 128 Q 247 -34 480 128" fill="none" stroke="rgba(237,234,226,0.14)" stroke-width="1.5" stroke-dasharray="4 9"/>
-    <circle cx="14" cy="128" r="5" fill="rgba(138,184,255,0.55)"/>
-    <circle cx="118" cy="66" r="4" fill="rgba(237,234,226,0.25)"/>
-    <circle cx="222" cy="38" r="4" fill="rgba(237,234,226,0.3)"/>
-    <circle cx="330" cy="44" r="5" fill="rgba(216,243,78,0.45)"/>
-    <circle cx="480" cy="128" r="8" fill="#D8F34E"/>
-    <circle cx="480" cy="128" r="16" fill="none" stroke="rgba(216,243,78,0.35)" stroke-width="1.5"/>
-  </svg>
-
-  <!-- series tag -->
-  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:150px; width:1400px; z-index:10; font-family:var(--jp); font-size:30px; font-weight:500; letter-spacing:0.06em; color:rgba(237,234,226,0.72);">
-    【Genspark公式講座】最新機能解説シリーズ <span style="color:var(--lime); font-weight:700;">vol.1</span>
-  </div>
-
-  <!-- hero line 1 -->
-  <div data-object="true" data-object-type="textbox" style="position:absolute; left:92px; top:430px; width:1740px; z-index:10; font-family:var(--jp); font-size:118px; font-weight:900; line-height:1.02; letter-spacing:-0.01em; color:var(--paper);">
-    常時稼働型<br>AIエージェントで
-  </div>
-
-  <!-- hero line 2 : the hanging clause -->
-  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:756px; width:1740px; z-index:10; font-family:var(--jp); font-size:150px; font-weight:900; line-height:1; letter-spacing:-0.015em; color:var(--lime);">
-    寝てる間に<span style="color:rgba(237,234,226,0.35);">——</span>
-  </div>
-
-  <!-- bottom meta row -->
-  <div data-object="true" data-object-type="textbox" style="position:absolute; left:96px; top:984px; width:900px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.28em; text-transform:uppercase; color:var(--muted);">
-    DMM学び放題 × Genspark
-  </div>
-
-  <div data-object="true" data-object-type="textbox" style="position:absolute; left:1360px; top:984px; width:464px; z-index:10; text-align:right; font-family:var(--mono); font-size:19px; letter-spacing:0.28em; text-transform:uppercase; color:var(--muted);">
-    Always-On Agent
+    ふだん連絡に使っている画面を選んでください
   </div>
 
 </div>
 </div><div class="slide" data-i="3">
-<div class="slide-container sc" data-screen-label="04 Hook — dawn" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- dawn glow, low-left -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:-260px; top:560px; width:1000px; height:640px; background:radial-gradient(circle at 35% 45%, rgba(216,243,78,0.14) 0%, rgba(216,243,78,0.04) 40%, transparent 68%); z-index:1;"></div>
-  <!-- faint horizon line -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:0; top:812px; width:1920px; height:1px; background:linear-gradient(90deg, transparent 0%, rgba(237,234,226,0.14) 45%, transparent 100%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Morning &middot; 07:03
-  </div>
-
-  <!-- headline, left-dominant -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:300px; width:1080px; z-index:10; font-size:104px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
-    寝ている間に、<br>昨日の仕事が<br><span style="color:var(--lime);">終わっている。</span>
-  </div>
-
-  <!-- supporting line -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:96px; top:700px; width:900px; z-index:10; font-size:32px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.6);">
-    起きて最初に開くのは、<br>まだ誰も触れていない<span style="color:var(--paper); font-weight:700;">整った状態</span>。
-  </div>
-
-  <!-- RIGHT: morning notification card -->
-  <div data-object="true" data-object-type="shape card" style="--d:.7s; position:absolute; left:1180px; top:300px; width:544px; height:360px; border:1.5px solid rgba(237,234,226,0.14); border-radius:16px; background:linear-gradient(160deg, rgba(237,234,226,0.05) 0%, rgba(11,12,14,0.2) 100%); z-index:3;"></div>
-
-  <!-- card inner hairline top accent -->
-  <div data-object="true" data-object-type="shape card" style="--d:.7s; position:absolute; left:1180px; top:300px; width:544px; height:5px; border-radius:3px; background:linear-gradient(90deg, var(--lime) 0%, rgba(216,243,78,0.1) 100%); z-index:4;"></div>
-
-  <!-- card header -->
-  <div data-object="true" data-object-type="textbox card" style="--d:.85s; position:absolute; left:1224px; top:344px; width:456px; z-index:10; display:flex; align-items:center; gap:16px;">
-    <div class="dawn" style="width:12px; height:12px; border-radius:50%; background:var(--lime); box-shadow:0 0 18px rgba(216,243,78,0.8); flex:none;"></div>
-    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(237,234,226,0.55);">Thread &middot; ready</div>
-  </div>
-
-  <!-- big count -->
-  <div data-object="true" data-object-type="textbox card" style="--d:1.0s; position:absolute; left:1224px; top:404px; width:456px; z-index:10;">
-    <span style="font-family:var(--mono); font-size:96px; font-weight:600; color:var(--lime); line-height:1; letter-spacing:-0.02em;">4</span>
-    <span style="font-size:40px; font-weight:700; color:var(--paper); margin-left:14px;">件、揃っています。</span>
-  </div>
-
-  <!-- item chips row -->
-  <div data-object="true" data-object-type="textbox card" style="--d:1.2s; position:absolute; left:1224px; top:548px; width:456px; z-index:10; display:flex; gap:10px; flex-wrap:wrap;">
-    <span style="font-size:22px; font-weight:500; color:var(--st-memo); border:1px solid rgba(138,184,255,0.35); border-radius:5px; padding:6px 12px;">メモ</span>
-    <span style="font-size:22px; font-weight:500; color:var(--st-mail); border:1px solid rgba(216,243,78,0.35); border-radius:5px; padding:6px 12px;">メール</span>
-    <span style="font-size:22px; font-weight:500; color:var(--st-visual); border:1px solid rgba(255,138,92,0.35); border-radius:5px; padding:6px 12px;">ビジュアル</span>
-    <span style="font-size:22px; font-weight:500; color:var(--st-deck); border:1px solid rgba(201,166,255,0.35); border-radius:5px; padding:6px 12px;">骨子</span>
-  </div>
-
-  <!-- bottom meta -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    You wake up &middot; it's already done
-  </div>
-
-</div>
-</div><div class="slide" data-i="4">
-<div class="slide-container sc" data-screen-label="05 Genspark overview" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- glow -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1150px; top:240px; width:760px; height:560px; background:radial-gradient(circle at 50% 45%, rgba(216,243,78,0.10) 0%, transparent 65%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    First &middot; Genspark itself
-  </div>
-
-  <!-- hairline -->
-  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
-
-  <!-- headline -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
-    チャットに聞かない。<br><span style="color:var(--lime);">仕事を、まるごと渡す。</span>
-  </div>
-
-  <!-- audience fit line -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.55s; position:absolute; left:96px; top:512px; width:1560px; z-index:10; font-size:30px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.55);">
-    今日は、企画・経営・現場を回している方が多い。<span style="color:var(--paper); font-weight:700;">この話は、そのための話。</span>
-  </div>
-
-  <!-- deliverable chips -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.8s; position:absolute; left:96px; top:620px; width:1728px; z-index:10; font-size:26px; font-weight:400; letter-spacing:0.02em; color:rgba(237,234,226,0.5); line-height:1.4; margin-bottom:8px;">
-    戻ってくるのは、開けるもの。
-  </div>
-
-  <div data-object="true" data-object-type="shape chip" style="--d:.95s; position:absolute; left:96px; top:690px; width:250px; height:96px; border:1px solid rgba(138,184,255,0.4); border-radius:8px; background:rgba(138,184,255,0.05); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox chip" style="--d:1.0s; position:absolute; left:120px; top:712px; width:210px; z-index:10; font-size:30px; font-weight:700; color:var(--st-memo);">レポート</div>
-
-  <div data-object="true" data-object-type="shape chip" style="--d:1.1s; position:absolute; left:372px; top:690px; width:250px; height:96px; border:1px solid rgba(216,243,78,0.4); border-radius:8px; background:rgba(216,243,78,0.05); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox chip" style="--d:1.15s; position:absolute; left:396px; top:712px; width:210px; z-index:10; font-size:30px; font-weight:700; color:var(--st-mail);">スライド</div>
-
-  <div data-object="true" data-object-type="shape chip" style="--d:1.25s; position:absolute; left:648px; top:690px; width:300px; height:96px; border:1px solid rgba(255,138,92,0.4); border-radius:8px; background:rgba(255,138,92,0.05); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox chip" style="--d:1.3s; position:absolute; left:672px; top:712px; width:260px; z-index:10; font-size:30px; font-weight:700; color:var(--st-visual);">表計算</div>
-
-  <div data-object="true" data-object-type="shape chip" style="--d:1.4s; position:absolute; left:974px; top:690px; width:300px; height:96px; border:1px solid rgba(201,166,255,0.4); border-radius:8px; background:rgba(201,166,255,0.05); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox chip" style="--d:1.45s; position:absolute; left:998px; top:712px; width:260px; z-index:10; font-size:30px; font-weight:700; color:var(--st-deck);">Webページ</div>
-
-  <div data-object="true" data-object-type="shape chip" style="--d:1.55s; position:absolute; left:1300px; top:690px; width:250px; height:96px; border:1px solid rgba(237,234,226,0.28); border-radius:8px; background:rgba(237,234,226,0.04); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox chip" style="--d:1.6s; position:absolute; left:1324px; top:712px; width:210px; z-index:10; font-size:30px; font-weight:700; color:var(--paper);">画像</div>
-
-  <!-- bottom meta -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:2.0s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Hand the job &middot; get back something to open
-  </div>
-
-</div>
-</div><div class="slide" data-i="5">
-<div class="slide-container sc" data-screen-label="06 Genspark — still running" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- glow -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1050px; top:380px; width:760px; height:460px; background:radial-gradient(circle at 50% 50%, rgba(216,243,78,0.10) 0%, transparent 65%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    First &middot; Genspark itself
-  </div>
-
-  <!-- hairline -->
-  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
-
-  <!-- headline -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1740px; z-index:10; font-size:100px; font-weight:900; line-height:1.16; letter-spacing:-0.012em; color:var(--paper);">
-    タブを閉じても、<br><span style="color:var(--lime);">走り続ける。</span>
-  </div>
-
-  <!-- LEFT: closing laptop mock -->
-  <!-- base -->
-  <div data-object="true" data-object-type="shape rv" style="--d:.7s; position:absolute; left:120px; top:676px; width:380px; height:14px; background:rgba(237,234,226,0.22); border-radius:7px; z-index:3;"></div>
-  <!-- screen (closes) -->
-  <div data-object="true" data-object-type="shape lid" style="--d:.9s; position:absolute; left:140px; top:560px; width:320px; height:112px; border:1.5px solid rgba(237,234,226,0.3); border-radius:8px; background:rgba(237,234,226,0.05); z-index:4;"></div>
-  <!-- x mark on screen -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.75s; position:absolute; left:140px; top:566px; width:320px; z-index:5; text-align:center; font-family:var(--mono); font-size:34px; color:rgba(237,234,226,0.4); letter-spacing:0.2em;">CLOSED</div>
-
-  <!-- caption under laptop -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:120px; top:740px; width:420px; z-index:10; font-size:28px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.5);">
-    画面は閉じた。
-  </div>
-
-  <!-- RIGHT: work keeps moving -->
-  <!-- track -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:680px; top:600px; width:1144px; height:10px; background:rgba(237,234,226,0.08); border-radius:5px; z-index:2;"></div>
-  <!-- filling bar -->
-  <div data-object="true" data-object-type="shape bar" style="--d:1.0s; --w:82%; position:absolute; left:680px; top:600px; height:10px; background:linear-gradient(90deg, rgba(216,243,78,0.95), rgba(216,243,78,0.35)); border-radius:5px; z-index:3;"></div>
-
-  <!-- live dot at bar head -->
-  <div data-object="true" data-object-type="shape livep" style="--d:1.4s; position:absolute; left:1596px; top:592px; width:26px; height:26px; border-radius:50%; background:var(--lime); box-shadow:0 0 26px rgba(216,243,78,0.8); z-index:4;"></div>
-
-  <!-- stage ticks -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.3s; position:absolute; left:680px; top:648px; width:200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4);">PLAN</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.45s; position:absolute; left:1010px; top:648px; width:200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4);">BUILD</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:1340px; top:648px; width:200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(216,243,78,0.8);">DONE?</div>
-
-  <!-- connecting sentence -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:680px; top:740px; width:1144px; z-index:10; font-size:34px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.7);">
-    長い作業は、<span style="color:var(--paper); font-weight:700;">あなたの画面の外で進みます。</span>
-  </div>
-
-  <!-- bottom meta -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:2.0s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    You close the tab &middot; the work doesn't
-  </div>
-
-</div>
-</div><div class="slide" data-i="6">
-<div class="slide-container sc" data-screen-label="07 Definition" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- right zone tint -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1180px; top:0; width:740px; height:1080px; background:linear-gradient(90deg, rgba(216,243,78,0) 0%, rgba(216,243,78,0.05) 100%); z-index:1;"></div>
-  <!-- divider hairline -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1120px; top:270px; width:2px; height:430px; background:linear-gradient(180deg, rgba(237,234,226,0) 0%, rgba(237,234,226,0.28) 50%, rgba(237,234,226,0) 100%); z-index:2;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Definition
-  </div>
-
-  <!-- LEFT: old pattern, muted, narrow -->
-  <div data-object="true" data-object-type="textbox rvx" style="--d:.3s; position:absolute; left:96px; top:330px; width:460px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted); margin-bottom:28px;">Before</div>
-    <div style="font-size:44px; font-weight:700; line-height:1.5; color:rgba(237,234,226,0.45);">
-      聞いて<br>答える。<br>
-      <span style="display:block; margin-top:22px; font-size:34px; font-weight:400; color:rgba(237,234,226,0.32); line-height:1.7;">
-        ウィンドウを閉じれば<br>止まる。
-      </span>
-    </div>
-  </div>
-
-  <!-- RIGHT: new pattern, dominant -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.65s; position:absolute; left:1240px; top:308px; width:580px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:28px;">After</div>
-    <div style="font-size:58px; font-weight:900; line-height:1.42; letter-spacing:-0.01em; color:var(--paper);">
-      任せて<br>
-      <span style="color:var(--lime);">離れても</span><br>
-      動き続ける。
-    </div>
-  </div>
-
-  <!-- mini diagrams under each side -->
-  <!-- BEFORE: ping-pong that stops -->
-  <svg data-object="true" data-object-type="icon" style="position:absolute; left:96px; top:560px; width:460px; height:88px; z-index:4;" viewBox="0 0 460 88">
-    <circle cx="24" cy="30" r="7" fill="rgba(237,234,226,0.4)"/>
-    <circle cx="24" cy="62" r="7" fill="rgba(237,234,226,0.2)"/>
-    <line x1="44" y1="30" x2="150" y2="30" stroke="rgba(237,234,226,0.28)" stroke-width="2"/>
-    <line x1="150" y1="30" x2="150" y2="62" stroke="rgba(237,234,226,0.18)" stroke-width="2"/>
-    <line x1="150" y1="62" x2="256" y2="62" stroke="rgba(237,234,226,0.28)" stroke-width="2"/>
-    <rect x="286" y="20" width="46" height="52" rx="6" fill="none" stroke="rgba(237,234,226,0.3)" stroke-width="2"/>
-    <line x1="292" y1="26" x2="326" y2="66" stroke="rgba(255,138,92,0.7)" stroke-width="3"/>
-    <line x1="326" y1="26" x2="292" y2="66" stroke="rgba(255,138,92,0.7)" stroke-width="3"/>
-  </svg>
-
-  <!-- AFTER: line keeps moving past a closed window -->
-  <svg data-object="true" data-object-type="icon" style="position:absolute; left:1240px; top:560px; width:580px; height:88px; z-index:4;" viewBox="0 0 580 88">
-    <circle cx="24" cy="44" r="8" fill="#D8F34E"/>
-    <line x1="48" y1="44" x2="556" y2="44" stroke="rgba(216,243,78,0.5)" stroke-width="2.5" stroke-dasharray="10 8"/>
-    <rect x="230" y="18" width="86" height="52" rx="8" fill="none" stroke="rgba(237,234,226,0.25)" stroke-width="2"/>
-    <line x1="240" y1="24" x2="306" y2="64" stroke="rgba(237,234,226,0.3)" stroke-width="2.5"/>
-    <polygon points="548,34 572,44 548,54" fill="#D8F34E"/>
-  </svg>
-
-  <!-- bottom sentence spanning -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.15s; position:absolute; left:96px; top:868px; width:1728px; z-index:10; font-size:34px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.66);">
-    「常時稼働型AIエージェント」とは、<span style="color:var(--paper); font-weight:700;">あなたが画面の前にいなくても仕事を進め続ける存在</span>のこと。
-  </div>
-
-</div>
-</div><div class="slide" data-i="7">
-<div class="slide-container sc" data-screen-label="08 Vocab — agent" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- glow -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1150px; top:300px; width:640px; height:460px; background:radial-gradient(circle at 50% 50%, rgba(138,184,255,0.10) 0%, transparent 65%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Vocabulary &middot; 01 / 04
-  </div>
-
-  <!-- hairline -->
-  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
-
-  <!-- headline -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:110px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
-    エージェント<span style="color:var(--st-memo);">.</span>
-  </div>
-
-  <!-- definition -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:470px; width:1500px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
-    言ったら、<span style="color:var(--paper); font-weight:700;">自分で進めてくれる存在。</span>
-  </div>
-
-  <!-- diagram: chat bubble -> arrow -> output doc -->
-  <!-- bubble -->
-  <div data-object="true" data-object-type="shape bub" style="--d:.9s; position:absolute; left:96px; top:650px; width:520px; height:132px; border:1.5px solid rgba(237,234,226,0.28); border-radius:14px 14px 14px 4px; background:rgba(237,234,226,0.04); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox bub" style="--d:.95s; position:absolute; left:132px; top:678px; width:452px; z-index:10; font-size:34px; font-weight:700; color:var(--paper); line-height:1.3;">
-    「議事録、まとめて」
-  </div>
-
-  <!-- arrow -->
-  <svg data-object="true" data-object-type="icon" style="position:absolute; left:660px; top:690px; width:220px; height:56px; z-index:4;" viewBox="0 0 220 56">
-    <line class="flow" style="--d:1.15s;" x1="4" y1="28" x2="196" y2="28" stroke="rgba(216,243,78,0.75)" stroke-width="3"/>
-    <polygon points="196,18 216,28 196,38" fill="rgba(216,243,78,0.85)"/>
-  </svg>
-
-  <!-- output doc mock -->
-  <div data-object="true" data-object-type="shape doc" style="--d:1.35s; position:absolute; left:930px; top:616px; width:460px; height:200px; border:1px solid rgba(138,184,255,0.4); border-radius:10px; background:rgba(138,184,255,0.05); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox doc" style="--d:1.45s; position:absolute; left:966px; top:648px; width:388px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(138,184,255,0.8); margin-bottom:16px;">Output</div>
-    <div style="display:flex; flex-direction:column; gap:10px;">
-      <div style="height:8px; width:340px; background:rgba(237,234,226,0.22); border-radius:4px;"></div>
-      <div style="height:8px; width:280px; background:rgba(237,234,226,0.14); border-radius:4px;"></div>
-      <div style="height:8px; width:308px; background:rgba(237,234,226,0.14); border-radius:4px;"></div>
-    </div>
-  </div>
-
-  <!-- example line -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.7s; position:absolute; left:1450px; top:668px; width:374px; z-index:10; font-size:29px; font-weight:700; color:var(--st-memo); line-height:1.45;">
-    まるごと<br>任せる。
-  </div>
-
-  <!-- bottom meta -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.9s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Say it once &middot; it runs itself
-  </div>
-
-</div>
-</div><div class="slide" data-i="8">
-<div class="slide-container sc" data-screen-label="09 Vocab — always-on" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- night glow -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:-180px; top:420px; width:900px; height:560px; background:radial-gradient(circle at 40% 45%, rgba(138,184,255,0.10) 0%, transparent 65%); z-index:1;"></div>
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1240px; top:460px; width:760px; height:520px; background:radial-gradient(circle at 50% 50%, rgba(216,243,78,0.12) 0%, transparent 65%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Vocabulary &middot; 02 / 04
-  </div>
-
-  <!-- hairline -->
-  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
-
-  <!-- headline -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
-    常時稼働<span style="color:var(--lime);">.</span>
-  </div>
-
-  <!-- definition -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:462px; width:1500px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
-    画面を閉じても、<span style="color:var(--paper); font-weight:700;">止まらない。</span>
-  </div>
-
-  <!-- night-to-dawn arc diagram -->
-  <svg data-object="true" data-object-type="icon" style="position:absolute; left:96px; top:600px; width:1728px; height:180px; z-index:4;" viewBox="0 0 1728 180">
-    <path d="M 20 150 Q 864 -60 1708 150" fill="none" stroke="rgba(237,234,226,0.14)" stroke-width="2" stroke-dasharray="6 10"/>
-    <circle cx="20" cy="150" r="7" fill="rgba(138,184,255,0.9)"/>
-    <circle cx="1708" cy="150" r="9" fill="#D8F34E"/>
-    <circle class="star" cx="430" cy="52" r="4" fill="rgba(237,234,226,0.5)"/>
-    <circle class="star" cx="700" cy="26" r="3" fill="rgba(237,234,226,0.4)"/>
-    <circle class="star" cx="1050" cy="34" r="4" fill="rgba(237,234,226,0.45)"/>
-    <circle class="star" cx="1330" cy="66" r="3" fill="rgba(216,243,78,0.6)"/>
-  </svg>
-
-  <!-- clock labels -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:96px; top:790px; width:300px; z-index:10; font-family:var(--mono); font-size:30px; letter-spacing:0.12em; color:rgba(138,184,255,0.85);">
-    23:00
-  </div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:1540px; top:790px; width:284px; z-index:10; text-align:right; font-family:var(--mono); font-size:30px; letter-spacing:0.12em; color:var(--lime);">
-    07:00
-  </div>
-
-  <!-- progress bar under arc -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:96px; top:868px; width:1728px; height:6px; background:rgba(237,234,226,0.08); border-radius:3px; z-index:2;"></div>
-  <div data-object="true" data-object-type="shape bar" style="--d:1.15s; --w:100%; position:absolute; left:96px; top:868px; height:6px; background:linear-gradient(90deg, rgba(138,184,255,0.85) 0%, rgba(216,243,78,0.9) 100%); border-radius:3px; z-index:3;"></div>
-
-  <!-- example -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:96px; top:906px; width:1728px; z-index:10; font-size:30px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.6);">
-    例：<span style="color:var(--paper); font-weight:700;">夜に依頼 → 朝に請求書が整う。</span>
-  </div>
-
-</div>
-</div><div class="slide" data-i="9">
-<div class="slide-container sc" data-screen-label="10 Vocab — credits" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- glow -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1180px; top:340px; width:600px; height:420px; background:radial-gradient(circle at 50% 50%, rgba(255,138,92,0.10) 0%, transparent 65%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Vocabulary &middot; 03 / 04
-  </div>
-
-  <!-- hairline -->
-  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
-
-  <!-- headline -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:110px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
-    クレジット<span style="color:var(--st-visual);">.</span>
-  </div>
-
-  <!-- definition -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:462px; width:1560px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
-    AIを使うための<span style="color:var(--paper); font-weight:700;">燃料。</span><span style="color:rgba(237,234,226,0.45);">回数でも容量でもない。</span>
-  </div>
-
-  <!-- fuel gauge -->
-  <!-- track -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:96px; top:668px; width:1300px; height:56px; border:1px solid rgba(237,234,226,0.14); border-radius:28px; background:rgba(237,234,226,0.03); z-index:2;"></div>
-
-  <!-- consumed segments -->
-  <div data-object="true" data-object-type="shape seg" style="--d:.95s; position:absolute; left:104px; top:676px; width:280px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(138,184,255,0.75), rgba(138,184,255,0.35)); z-index:3;"></div>
-  <div data-object="true" data-object-type="shape seg" style="--d:1.15s; position:absolute; left:404px; top:676px; width:220px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(216,243,78,0.75), rgba(216,243,78,0.35)); z-index:3;"></div>
-  <div data-object="true" data-object-type="shape seg" style="--d:1.35s; position:absolute; left:644px; top:676px; width:300px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(255,138,92,0.75), rgba(255,138,92,0.35)); z-index:3;"></div>
-
-  <!-- remaining fuel, pulsing -->
-  <div data-object="true" data-object-type="shape drain" style="--d:1.55s; position:absolute; left:964px; top:676px; width:412px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(216,243,78,0.5), rgba(216,243,78,0.08)); z-index:3;"></div>
-
-  <!-- segment labels -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:104px; top:756px; width:280px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(138,184,255,0.8);">議事録</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:404px; top:756px; width:220px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(216,243,78,0.8);">メール</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:644px; top:756px; width:300px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(255,138,92,0.8);">ビジュアル</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:964px; top:756px; width:412px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(237,234,226,0.4);">まだ、残っている</div>
-
-  <!-- example -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.85s; position:absolute; left:96px; top:876px; width:1728px; z-index:10; font-size:32px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.6);">
-    例：メール下書き1通の<span style="color:var(--paper); font-weight:700;">「燃料」感覚。</span>
-  </div>
-
-  <!-- bottom meta -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:2.05s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Fuel, not quota
-  </div>
-
-</div>
-</div><div class="slide" data-i="10">
-<div class="slide-container sc" data-screen-label="11 Vocab — chat" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
-
-  <!-- glow -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:1100px; top:280px; width:700px; height:520px; background:radial-gradient(circle at 50% 45%, rgba(201,166,255,0.10) 0%, transparent 65%); z-index:1;"></div>
-
-  <!-- tag -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Vocabulary &middot; 04 / 04
-  </div>
-
-  <!-- hairline -->
-  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
-
-  <!-- headline -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
-    チャットで依頼<span style="color:var(--st-deck);">.</span>
-  </div>
-
-  <!-- definition -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:452px; width:1500px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
-    グループに投げるだけで、<span style="color:var(--paper); font-weight:700;">分担される。</span>
-  </div>
-
-  <!-- chat mock: panel -->
-  <div data-object="true" data-object-type="shape" style="position:absolute; left:96px; top:600px; width:1180px; height:252px; border:1px solid rgba(237,234,226,0.12); border-radius:16px; background:rgba(237,234,226,0.025); z-index:2;"></div>
-
-  <!-- your bubble (right-aligned inside panel) -->
-  <div data-object="true" data-object-type="shape msg" style="--d:.9s; position:absolute; left:560px; top:628px; width:684px; height:72px; border-radius:14px 14px 4px 14px; background:rgba(245,239,224,0.10); border:1px solid rgba(245,239,224,0.25); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox msg" style="--d:.95s; position:absolute; left:588px; top:640px; width:628px; z-index:10; font-size:30px; font-weight:700; color:var(--paper); line-height:1.3;">
-    これまとめて
-  </div>
-
-  <!-- reply row: three small avatars + typing dots -->
-  <div data-object="true" data-object-type="shape msg" style="--d:1.3s; position:absolute; left:132px; top:736px; width:14px; height:14px; border-radius:50%; background:var(--st-memo); z-index:4;"></div>
-  <div data-object="true" data-object-type="shape msg" style="--d:1.38s; position:absolute; left:158px; top:736px; width:14px; height:14px; border-radius:50%; background:var(--st-mail); z-index:4;"></div>
-  <div data-object="true" data-object-type="shape msg" style="--d:1.46s; position:absolute; left:184px; top:736px; width:14px; height:14px; border-radius:50%; background:var(--st-visual); z-index:4;"></div>
-
-  <div data-object="true" data-object-type="shape msg" style="--d:1.55s; position:absolute; left:224px; top:724px; width:300px; height:40px; border-radius:20px; background:rgba(237,234,226,0.05); border:1px solid rgba(237,234,226,0.12); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox msg" style="--d:1.6s; position:absolute; left:248px; top:730px; width:252px; z-index:10; display:flex; gap:10px; align-items:center;">
-    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:rgba(237,234,226,0.7);display:block;"></span>
-    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:rgba(237,234,226,0.7);display:block;animation-delay:.2s;"></span>
-    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:rgba(237,234,226,0.7);display:block;animation-delay:.4s;"></span>
-  </div>
-
-  <!-- right annotation -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:1360px; top:640px; width:464px; z-index:10; text-align:right;">
-    <div style="font-size:40px; font-weight:900; color:var(--paper); line-height:1.35; letter-spacing:-0.01em;">送るだけ。<br>
-    <span style="color:var(--st-deck);">分担は勝手に。</span></div>
-  </div>
-
-  <!-- bottom meta -->
-  <div data-object="true" data-object-type="textbox rv" style="--d:2.0s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    One message &middot; they split it
-  </div>
-
-</div>
-</div><div class="slide" data-i="11">
 <div class="slide-container sc" data-screen-label="12 Speaker — roles" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
 
   <!-- lime corner block -->
@@ -1110,7 +663,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Speaker
+    お話しする人
   </div>
 
   <!-- hairline -->
@@ -1144,16 +697,16 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Names first &middot; what comes next
+    登壇者の紹介
   </div>
 
 </div>
-</div><div class="slide" data-i="12">
+</div><div class="slide" data-i="4">
 <div class="slide-container sc" data-screen-label="13 Speaker — what" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    What I do daily
+    ふだんの仕事
   </div>
 
   <!-- hairline -->
@@ -1167,28 +720,28 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- right zone: two observed scenes -->
   <div data-object="true" data-object-type="shape" style="position:absolute; left:1330px; top:280px; width:494px; height:210px; border-left:4px solid rgba(138,184,255,0.6); background:rgba(138,184,255,0.05); border-radius:0 8px 8px 0; z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.7s; position:absolute; left:1378px; top:310px; width:420px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(138,184,255,0.8); margin-bottom:14px;">Scene A</div>
+    <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(138,184,255,0.8); margin-bottom:14px;">場面1</div>
     <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.4;">社長のスキマ時間</div>
   </div>
 
   <div data-object="true" data-object-type="shape" style="position:absolute; left:1330px; top:540px; width:494px; height:210px; border-left:4px solid rgba(255,138,92,0.6); background:rgba(255,138,92,0.05); border-radius:0 8px 8px 0; z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:1378px; top:570px; width:420px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(255,138,92,0.8); margin-bottom:14px;">Scene B</div>
+    <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(255,138,92,0.8); margin-bottom:14px;">場面2</div>
     <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.4;">人手が足りない現場</div>
   </div>
 
   <!-- bottom connecting sentence -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:96px; top:830px; width:1728px; z-index:10; font-size:36px; font-weight:400; line-height:1.65; color:rgba(237,234,226,0.68);">
-    現在、<span id="company-count" style="color:var(--lime); font-weight:900;">◯社</span>の経営者の右腕として、その両方を毎日見ている。<span style="color:var(--paper); font-weight:700;">「忙しい」の正体は、種類が違う。</span>
+    現在、<span id="company-count" style="color:var(--lime); font-weight:900;">◯社</span>の経営者の右腕として、その両方を毎日見ています。<span style="color:var(--paper); font-weight:700;">同じ「忙しい」でも中身は違います。</span>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.45s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Two kinds of "no time"
+    「時間がない」にも2種類ある
   </div>
 
 </div>
-</div><div class="slide" data-i="13">
+</div><div class="slide" data-i="5">
 <div class="slide-container sc" data-screen-label="14 Speaker — why" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
 
   <!-- glow -->
@@ -1196,45 +749,45 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Why this talk, why me
+    なぜこの話をするか
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1560px; z-index:10; font-size:100px; font-weight:900; line-height:1.16; letter-spacing:-0.012em; color:var(--paper);">
-    作り物のデモじゃない。<br><span style="color:var(--lime);">普段の運用。</span>
+    デモ用に作ったものではなく、<br><span style="color:var(--lime);">毎日動かしている実物です。</span>
   </div>
 
   <!-- evidence strip: four real tasks -->
   <div data-object="true" data-object-type="shape rv" style="--d:.75s; position:absolute; left:96px; top:560px; width:1728px; height:150px; background:rgba(237,234,226,0.03); border:1px solid rgba(237,234,226,0.09); border-radius:10px; z-index:2;"></div>
 
   <div data-object="true" data-object-type="textbox rv" style="--d:.85s; position:absolute; left:140px; top:588px; width:330px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(138,184,255,0.8); margin-bottom:12px;">Real task</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(138,184,255,0.8); margin-bottom:12px;">実際の仕事</div>
     <div style="font-size:32px; font-weight:700; color:var(--paper); line-height:1.3;">議事録</div>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.95s; position:absolute; left:540px; top:588px; width:330px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(216,243,78,0.8); margin-bottom:12px;">Real task</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(216,243,78,0.8); margin-bottom:12px;">実際の仕事</div>
     <div style="font-size:32px; font-weight:700; color:var(--paper); line-height:1.3;">請求書</div>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.05s; position:absolute; left:940px; top:588px; width:330px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(255,138,92,0.8); margin-bottom:12px;">Real task</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(255,138,92,0.8); margin-bottom:12px;">実際の仕事</div>
     <div style="font-size:32px; font-weight:700; color:var(--paper); line-height:1.3;">メール下書き</div>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.15s; position:absolute; left:1340px; top:588px; width:380px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(201,166,255,0.8); margin-bottom:12px;">Real task</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(201,166,255,0.8); margin-bottom:12px;">実際の仕事</div>
     <div style="font-size:32px; font-weight:700; color:var(--paper); line-height:1.3;">SNS運用</div>
   </div>
 
   <!-- stamp -->
   <div data-object="true" data-object-type="shape stamp" style="--d:1.7s; position:absolute; left:1500px; top:790px; width:300px; height:110px; border:2.5px solid var(--lime); border-radius:8px; transform:rotate(-2deg); z-index:4;"></div>
-  <div data-object="true" data-object-type="textbox stamp" style="--d:1.75s; position:absolute; left:1522px; top:812px; width:256px; z-index:10; transform:rotate(-2deg); font-family:var(--mono); font-size:26px; font-weight:600; letter-spacing:0.14em; color:var(--lime); line-height:1.2;">NOT A DEMO<br><span style="font-size:19px; color:rgba(237,234,226,0.5); letter-spacing:0.2em;">IT'S DAILY OPS</span></div>
+  <div data-object="true" data-object-type="textbox stamp" style="--d:1.75s; position:absolute; left:1522px; top:812px; width:256px; z-index:10; transform:rotate(-2deg); font-family:var(--mono); font-size:26px; font-weight:600; letter-spacing:0.14em; color:var(--lime); line-height:1.2;">デモ用ではなく<br><span style="font-size:19px; color:rgba(237,234,226,0.5); letter-spacing:0.2em;">毎日の仕事そのもの</span></div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.95s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    What you see = what runs on Monday
+    今日見るものが、明日から動くもの
   </div>
 
 </div>
-</div><div class="slide" data-i="14">
+</div><div class="slide" data-i="6">
 <div class="slide-container sc" data-screen-label="15 Why you" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
 
   <!-- glow -->
@@ -1242,7 +795,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Why you, specifically
+    なぜ今日の方に向いているか
   </div>
 
   <!-- hairline -->
@@ -1250,7 +803,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.16; letter-spacing:-0.012em; color:var(--paper);">
-    この立ち位置、<br><span style="color:var(--lime);">そのまま刺さります。</span>
+    企画・経営・管理職の方なら、<br><span style="color:var(--lime);">そのまま真似できます。</span>
   </div>
 
   <!-- three role chips, staggered -->
@@ -1276,12 +829,459 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- supporting line -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.7s; position:absolute; left:96px; top:790px; width:1500px; z-index:10; font-size:36px; font-weight:400; line-height:1.7; color:rgba(237,234,226,0.7);">
-    今日見せるのは、<span style="color:var(--paper); font-weight:700;">自社の実務をAI社員に渡して回している状態</span>そのもの。
+    今日お見せするのは、<span style="color:var(--paper); font-weight:700;">自分の会社の仕事をAI社員に任せて回している、その中身</span>です。
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.95s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Built for the people in this room
+    今日の参加者に、そのまま当てはまる話
+  </div>
+
+</div>
+</div><div class="slide" data-i="7">
+<div class="slide-container sc" data-screen-label="04 Hook — dawn" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- dawn glow, low-left -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:-260px; top:560px; width:1000px; height:640px; background:radial-gradient(circle at 35% 45%, rgba(216,243,78,0.14) 0%, rgba(216,243,78,0.04) 40%, transparent 68%); z-index:1;"></div>
+  <!-- faint horizon line -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:0; top:812px; width:1920px; height:1px; background:linear-gradient(90deg, transparent 0%, rgba(237,234,226,0.14) 45%, transparent 100%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    朝7時03分
+  </div>
+
+  <!-- headline, left-dominant -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:300px; width:1080px; z-index:10; font-size:104px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
+    寝ている間に、<br>昨日の仕事が<br><span style="color:var(--lime);">終わっている。</span>
+  </div>
+
+  <!-- supporting line -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:96px; top:700px; width:900px; z-index:10; font-size:32px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.6);">
+    朝いちばんにチャットを開くと、<br>頼んだ仕事が仕上がって<span style="color:var(--paper); font-weight:700;">置いてあります</span>。
+  </div>
+
+  <!-- RIGHT: morning notification card -->
+  <div data-object="true" data-object-type="shape card" style="--d:.7s; position:absolute; left:1180px; top:300px; width:544px; height:360px; border:1.5px solid rgba(237,234,226,0.14); border-radius:16px; background:linear-gradient(160deg, rgba(237,234,226,0.05) 0%, rgba(11,12,14,0.2) 100%); z-index:3;"></div>
+
+  <!-- card inner hairline top accent -->
+  <div data-object="true" data-object-type="shape card" style="--d:.7s; position:absolute; left:1180px; top:300px; width:544px; height:5px; border-radius:3px; background:linear-gradient(90deg, var(--lime) 0%, rgba(216,243,78,0.1) 100%); z-index:4;"></div>
+
+  <!-- card header -->
+  <div data-object="true" data-object-type="textbox card" style="--d:.85s; position:absolute; left:1224px; top:344px; width:456px; z-index:10; display:flex; align-items:center; gap:16px;">
+    <div class="dawn" style="width:12px; height:12px; border-radius:50%; background:var(--lime); box-shadow:0 0 18px rgba(216,243,78,0.8); flex:none;"></div>
+    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(237,234,226,0.55);">チャットの中</div>
+  </div>
+
+  <!-- big count -->
+  <div data-object="true" data-object-type="textbox card" style="--d:1.0s; position:absolute; left:1224px; top:404px; width:456px; z-index:10;">
+    <span style="font-family:var(--mono); font-size:96px; font-weight:600; color:var(--lime); line-height:1; letter-spacing:-0.02em;">4</span>
+    <span style="font-size:40px; font-weight:700; color:var(--paper); margin-left:14px;">つ、できています。</span>
+  </div>
+
+  <!-- item chips row -->
+  <div data-object="true" data-object-type="textbox card" style="--d:1.2s; position:absolute; left:1224px; top:548px; width:456px; z-index:10; display:flex; gap:10px; flex-wrap:wrap;">
+    <span style="font-size:22px; font-weight:500; color:var(--st-memo); border:1px solid rgba(138,184,255,0.35); border-radius:5px; padding:6px 12px;">メモ</span>
+    <span style="font-size:22px; font-weight:500; color:var(--st-mail); border:1px solid rgba(216,243,78,0.35); border-radius:5px; padding:6px 12px;">メール</span>
+    <span style="font-size:22px; font-weight:500; color:var(--st-visual); border:1px solid rgba(255,138,92,0.35); border-radius:5px; padding:6px 12px;">ビジュアル</span>
+    <span style="font-size:22px; font-weight:500; color:var(--st-deck); border:1px solid rgba(201,166,255,0.35); border-radius:5px; padding:6px 12px;">骨子</span>
+  </div>
+
+  <!-- bottom meta -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
+    起きたら、もうできている
+  </div>
+
+</div>
+</div><div class="slide" data-i="8">
+<div class="slide-container sc" data-screen-label="05 Genspark overview" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- glow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1150px; top:240px; width:760px; height:560px; background:radial-gradient(circle at 50% 45%, rgba(216,243,78,0.10) 0%, transparent 65%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    まずGensparkそのものの話
+  </div>
+
+  <!-- hairline -->
+  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
+
+  <!-- headline -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
+    質問するのではなく、<br><span style="color:var(--lime);">仕事ごと、おまかせする。</span>
+  </div>
+
+  <!-- audience fit line -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.55s; position:absolute; left:96px; top:512px; width:1560px; z-index:10; font-size:30px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.55);">
+    今日は、企画・経営・現場を回している方が多いと思います。<span style="color:var(--paper); font-weight:700;">そういう方のための話です。</span>
+  </div>
+
+  <!-- deliverable chips -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.8s; position:absolute; left:96px; top:620px; width:1728px; z-index:10; font-size:26px; font-weight:400; letter-spacing:0.02em; color:rgba(237,234,226,0.5); line-height:1.4; margin-bottom:8px;">
+    返ってくるのは、そのまま開けるファイルです。
+  </div>
+
+  <div data-object="true" data-object-type="shape chip" style="--d:.95s; position:absolute; left:96px; top:690px; width:250px; height:96px; border:1px solid rgba(138,184,255,0.4); border-radius:8px; background:rgba(138,184,255,0.05); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox chip" style="--d:1.0s; position:absolute; left:120px; top:712px; width:210px; z-index:10; font-size:30px; font-weight:700; color:var(--st-memo);">レポート</div>
+
+  <div data-object="true" data-object-type="shape chip" style="--d:1.1s; position:absolute; left:372px; top:690px; width:250px; height:96px; border:1px solid rgba(216,243,78,0.4); border-radius:8px; background:rgba(216,243,78,0.05); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox chip" style="--d:1.15s; position:absolute; left:396px; top:712px; width:210px; z-index:10; font-size:30px; font-weight:700; color:var(--st-mail);">スライド</div>
+
+  <div data-object="true" data-object-type="shape chip" style="--d:1.25s; position:absolute; left:648px; top:690px; width:300px; height:96px; border:1px solid rgba(255,138,92,0.4); border-radius:8px; background:rgba(255,138,92,0.05); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox chip" style="--d:1.3s; position:absolute; left:672px; top:712px; width:260px; z-index:10; font-size:30px; font-weight:700; color:var(--st-visual);">表計算</div>
+
+  <div data-object="true" data-object-type="shape chip" style="--d:1.4s; position:absolute; left:974px; top:690px; width:300px; height:96px; border:1px solid rgba(201,166,255,0.4); border-radius:8px; background:rgba(201,166,255,0.05); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox chip" style="--d:1.45s; position:absolute; left:998px; top:712px; width:260px; z-index:10; font-size:30px; font-weight:700; color:var(--st-deck);">Webページ</div>
+
+  <div data-object="true" data-object-type="shape chip" style="--d:1.55s; position:absolute; left:1300px; top:690px; width:250px; height:96px; border:1px solid rgba(237,234,226,0.28); border-radius:8px; background:rgba(237,234,226,0.04); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox chip" style="--d:1.6s; position:absolute; left:1324px; top:712px; width:210px; z-index:10; font-size:30px; font-weight:700; color:var(--paper);">画像</div>
+
+  <!-- bottom meta -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:2.0s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
+    仕事ごと渡すと、開けるファイルが返ってくる
+  </div>
+
+</div>
+</div><div class="slide" data-i="9">
+<div class="slide-container sc" data-screen-label="06 Genspark — still running" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- glow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1050px; top:380px; width:760px; height:460px; background:radial-gradient(circle at 50% 50%, rgba(216,243,78,0.10) 0%, transparent 65%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    まずGensparkそのものの話
+  </div>
+
+  <!-- hairline -->
+  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
+
+  <!-- headline -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1740px; z-index:10; font-size:100px; font-weight:900; line-height:1.16; letter-spacing:-0.012em; color:var(--paper);">
+    ブラウザを閉じても、<br><span style="color:var(--lime);">作業は続きます。</span>
+  </div>
+
+  <!-- LEFT: closing laptop mock -->
+  <!-- base -->
+  <div data-object="true" data-object-type="shape rv" style="--d:.7s; position:absolute; left:120px; top:676px; width:380px; height:14px; background:rgba(237,234,226,0.22); border-radius:7px; z-index:3;"></div>
+  <!-- screen (closes) -->
+  <div data-object="true" data-object-type="shape lid" style="--d:.9s; position:absolute; left:140px; top:560px; width:320px; height:112px; border:1.5px solid rgba(237,234,226,0.3); border-radius:8px; background:rgba(237,234,226,0.05); z-index:4;"></div>
+  <!-- x mark on screen -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.75s; position:absolute; left:140px; top:566px; width:320px; z-index:5; text-align:center; font-family:var(--mono); font-size:34px; color:rgba(237,234,226,0.4); letter-spacing:0.2em;">閉じた</div>
+
+  <!-- caption under laptop -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:120px; top:740px; width:420px; z-index:10; font-size:28px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.5);">
+    パソコンは閉じた。
+  </div>
+
+  <!-- RIGHT: work keeps moving -->
+  <!-- track -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:680px; top:600px; width:1144px; height:10px; background:rgba(237,234,226,0.08); border-radius:5px; z-index:2;"></div>
+  <!-- filling bar -->
+  <div data-object="true" data-object-type="shape bar" style="--d:1.0s; --w:82%; position:absolute; left:680px; top:600px; height:10px; background:linear-gradient(90deg, rgba(216,243,78,0.95), rgba(216,243,78,0.35)); border-radius:5px; z-index:3;"></div>
+
+  <!-- live dot at bar head -->
+  <div data-object="true" data-object-type="shape livep" style="--d:1.4s; position:absolute; left:1596px; top:592px; width:26px; height:26px; border-radius:50%; background:var(--lime); box-shadow:0 0 26px rgba(216,243,78,0.8); z-index:4;"></div>
+
+  <!-- stage ticks -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.3s; position:absolute; left:680px; top:648px; width:200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4);">PLAN</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.45s; position:absolute; left:1010px; top:648px; width:200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4);">BUILD</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:1340px; top:648px; width:200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(216,243,78,0.8);">DONE?</div>
+
+  <!-- connecting sentence -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:680px; top:740px; width:1144px; z-index:10; font-size:34px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.7);">
+    時間のかかる作業は、<span style="color:var(--paper); font-weight:700;">あなたが見ていない間も進みます。</span>
+  </div>
+
+  <!-- bottom meta -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:2.0s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
+    画面を閉じても、作業は続く
+  </div>
+
+</div>
+</div><div class="slide" data-i="10">
+<div class="slide-container sc" data-screen-label="07 Definition" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- right zone tint -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1180px; top:0; width:740px; height:1080px; background:linear-gradient(90deg, rgba(216,243,78,0) 0%, rgba(216,243,78,0.05) 100%); z-index:1;"></div>
+  <!-- divider hairline -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1120px; top:270px; width:2px; height:430px; background:linear-gradient(180deg, rgba(237,234,226,0) 0%, rgba(237,234,226,0.28) 50%, rgba(237,234,226,0) 100%); z-index:2;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    ことばの意味
+  </div>
+
+  <!-- LEFT: old pattern, muted, narrow -->
+  <div data-object="true" data-object-type="textbox rvx" style="--d:.3s; position:absolute; left:96px; top:330px; width:460px; z-index:10;">
+    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted); margin-bottom:28px;">これまで</div>
+    <div style="font-size:44px; font-weight:700; line-height:1.5; color:rgba(237,234,226,0.45);">
+      質問して<br>答えが返る。<br>
+      <span style="display:block; margin-top:22px; font-size:34px; font-weight:400; color:rgba(237,234,226,0.32); line-height:1.7;">
+        画面を閉じたら<br>そこで終わり。
+      </span>
+    </div>
+  </div>
+
+  <!-- RIGHT: new pattern, dominant -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.65s; position:absolute; left:1240px; top:308px; width:580px; z-index:10;">
+    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:28px;">これから</div>
+    <div style="font-size:58px; font-weight:900; line-height:1.42; letter-spacing:-0.01em; color:var(--paper);">
+      頼んだら<br>
+      <span style="color:var(--lime);">席を立っても</span><br>
+      進み続ける。
+    </div>
+  </div>
+
+  <!-- mini diagrams under each side -->
+  <!-- BEFORE: ping-pong that stops -->
+  <svg data-object="true" data-object-type="icon" style="position:absolute; left:96px; top:560px; width:460px; height:88px; z-index:4;" viewBox="0 0 460 88">
+    <circle cx="24" cy="30" r="7" fill="rgba(237,234,226,0.4)"/>
+    <circle cx="24" cy="62" r="7" fill="rgba(237,234,226,0.2)"/>
+    <line x1="44" y1="30" x2="150" y2="30" stroke="rgba(237,234,226,0.28)" stroke-width="2"/>
+    <line x1="150" y1="30" x2="150" y2="62" stroke="rgba(237,234,226,0.18)" stroke-width="2"/>
+    <line x1="150" y1="62" x2="256" y2="62" stroke="rgba(237,234,226,0.28)" stroke-width="2"/>
+    <rect x="286" y="20" width="46" height="52" rx="6" fill="none" stroke="rgba(237,234,226,0.3)" stroke-width="2"/>
+    <line x1="292" y1="26" x2="326" y2="66" stroke="rgba(255,138,92,0.7)" stroke-width="3"/>
+    <line x1="326" y1="26" x2="292" y2="66" stroke="rgba(255,138,92,0.7)" stroke-width="3"/>
+  </svg>
+
+  <!-- AFTER: line keeps moving past a closed window -->
+  <svg data-object="true" data-object-type="icon" style="position:absolute; left:1240px; top:560px; width:580px; height:88px; z-index:4;" viewBox="0 0 580 88">
+    <circle cx="24" cy="44" r="8" fill="#D8F34E"/>
+    <line x1="48" y1="44" x2="556" y2="44" stroke="rgba(216,243,78,0.5)" stroke-width="2.5" stroke-dasharray="10 8"/>
+    <rect x="230" y="18" width="86" height="52" rx="8" fill="none" stroke="rgba(237,234,226,0.25)" stroke-width="2"/>
+    <line x1="240" y1="24" x2="306" y2="64" stroke="rgba(237,234,226,0.3)" stroke-width="2.5"/>
+    <polygon points="548,34 572,44 548,54" fill="#D8F34E"/>
+  </svg>
+
+  <!-- bottom sentence spanning -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.15s; position:absolute; left:96px; top:868px; width:1728px; z-index:10; font-size:34px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.66);">
+    「常時稼働型AIエージェント」とは、<span style="color:var(--paper); font-weight:700;">あなたが見ていない間も仕事を進めてくれるAI</span>のこと。
+  </div>
+
+</div>
+</div><div class="slide" data-i="11">
+<div class="slide-container sc" data-screen-label="08 Vocab — agent" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- glow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1150px; top:300px; width:640px; height:460px; background:radial-gradient(circle at 50% 50%, rgba(138,184,255,0.10) 0%, transparent 65%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    覚えることば 1／4
+  </div>
+
+  <!-- hairline -->
+  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
+
+  <!-- headline -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:110px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
+    エージェント<span style="color:var(--st-memo);">.</span>
+  </div>
+
+  <!-- definition -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:470px; width:1500px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
+    頼むと、<span style="color:var(--paper); font-weight:700;">自分で最後までやってくれるAI。</span>
+  </div>
+
+  <!-- diagram: chat bubble -> arrow -> output doc -->
+  <!-- bubble -->
+  <div data-object="true" data-object-type="shape bub" style="--d:.9s; position:absolute; left:96px; top:650px; width:520px; height:132px; border:1.5px solid rgba(237,234,226,0.28); border-radius:14px 14px 14px 4px; background:rgba(237,234,226,0.04); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox bub" style="--d:.95s; position:absolute; left:132px; top:678px; width:452px; z-index:10; font-size:34px; font-weight:700; color:var(--paper); line-height:1.3;">
+    「議事録、まとめて」
+  </div>
+
+  <!-- arrow -->
+  <svg data-object="true" data-object-type="icon" style="position:absolute; left:660px; top:690px; width:220px; height:56px; z-index:4;" viewBox="0 0 220 56">
+    <line class="flow" style="--d:1.15s;" x1="4" y1="28" x2="196" y2="28" stroke="rgba(216,243,78,0.75)" stroke-width="3"/>
+    <polygon points="196,18 216,28 196,38" fill="rgba(216,243,78,0.85)"/>
+  </svg>
+
+  <!-- output doc mock -->
+  <div data-object="true" data-object-type="shape doc" style="--d:1.35s; position:absolute; left:930px; top:616px; width:460px; height:200px; border:1px solid rgba(138,184,255,0.4); border-radius:10px; background:rgba(138,184,255,0.05); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox doc" style="--d:1.45s; position:absolute; left:966px; top:648px; width:388px; z-index:10;">
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(138,184,255,0.8); margin-bottom:16px;">できあがるもの</div>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <div style="height:8px; width:340px; background:rgba(237,234,226,0.22); border-radius:4px;"></div>
+      <div style="height:8px; width:280px; background:rgba(237,234,226,0.14); border-radius:4px;"></div>
+      <div style="height:8px; width:308px; background:rgba(237,234,226,0.14); border-radius:4px;"></div>
+    </div>
+  </div>
+
+  <!-- example line -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.7s; position:absolute; left:1450px; top:668px; width:374px; z-index:10; font-size:29px; font-weight:700; color:var(--st-memo); line-height:1.45;">
+    あとは<br>おまかせ。
+  </div>
+
+  <!-- bottom meta -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.9s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
+    一度頼めば、あとは自分で進む
+  </div>
+
+</div>
+</div><div class="slide" data-i="12">
+<div class="slide-container sc" data-screen-label="09 Vocab — always-on" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- night glow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:-180px; top:420px; width:900px; height:560px; background:radial-gradient(circle at 40% 45%, rgba(138,184,255,0.10) 0%, transparent 65%); z-index:1;"></div>
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1240px; top:460px; width:760px; height:520px; background:radial-gradient(circle at 50% 50%, rgba(216,243,78,0.12) 0%, transparent 65%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    覚えることば 2／4
+  </div>
+
+  <!-- hairline -->
+  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
+
+  <!-- headline -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
+    常時稼働<span style="color:var(--lime);">.</span>
+  </div>
+
+  <!-- definition -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:462px; width:1500px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
+    パソコンを閉じても、<span style="color:var(--paper); font-weight:700;">作業は続きます。</span>
+  </div>
+
+  <!-- night-to-dawn arc diagram -->
+  <svg data-object="true" data-object-type="icon" style="position:absolute; left:96px; top:600px; width:1728px; height:180px; z-index:4;" viewBox="0 0 1728 180">
+    <path d="M 20 150 Q 864 -60 1708 150" fill="none" stroke="rgba(237,234,226,0.14)" stroke-width="2" stroke-dasharray="6 10"/>
+    <circle cx="20" cy="150" r="7" fill="rgba(138,184,255,0.9)"/>
+    <circle cx="1708" cy="150" r="9" fill="#D8F34E"/>
+    <circle class="star" cx="430" cy="52" r="4" fill="rgba(237,234,226,0.5)"/>
+    <circle class="star" cx="700" cy="26" r="3" fill="rgba(237,234,226,0.4)"/>
+    <circle class="star" cx="1050" cy="34" r="4" fill="rgba(237,234,226,0.45)"/>
+    <circle class="star" cx="1330" cy="66" r="3" fill="rgba(216,243,78,0.6)"/>
+  </svg>
+
+  <!-- clock labels -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:96px; top:790px; width:300px; z-index:10; font-family:var(--mono); font-size:30px; letter-spacing:0.12em; color:rgba(138,184,255,0.85);">
+    23:00
+  </div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:1540px; top:790px; width:284px; z-index:10; text-align:right; font-family:var(--mono); font-size:30px; letter-spacing:0.12em; color:var(--lime);">
+    07:00
+  </div>
+
+  <!-- progress bar under arc -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:96px; top:868px; width:1728px; height:6px; background:rgba(237,234,226,0.08); border-radius:3px; z-index:2;"></div>
+  <div data-object="true" data-object-type="shape bar" style="--d:1.15s; --w:100%; position:absolute; left:96px; top:868px; height:6px; background:linear-gradient(90deg, rgba(138,184,255,0.85) 0%, rgba(216,243,78,0.9) 100%); border-radius:3px; z-index:3;"></div>
+
+  <!-- example -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:96px; top:906px; width:1728px; z-index:10; font-size:30px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.6);">
+    例：<span style="color:var(--paper); font-weight:700;">夜に頼むと、朝には請求書ができています。</span>
+  </div>
+
+</div>
+</div><div class="slide" data-i="13">
+<div class="slide-container sc" data-screen-label="10 Vocab — credits" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- glow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1180px; top:340px; width:600px; height:420px; background:radial-gradient(circle at 50% 50%, rgba(255,138,92,0.10) 0%, transparent 65%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    覚えることば 3／4
+  </div>
+
+  <!-- hairline -->
+  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
+
+  <!-- headline -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:110px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
+    クレジット<span style="color:var(--st-visual);">.</span>
+  </div>
+
+  <!-- definition -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:462px; width:1560px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
+    AIを動かすための<span style="color:var(--paper); font-weight:700;">ガソリンのようなもの。</span><span style="color:rgba(237,234,226,0.45);">使った分だけ減ります。</span>
+  </div>
+
+  <!-- fuel gauge -->
+  <!-- track -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:96px; top:668px; width:1300px; height:56px; border:1px solid rgba(237,234,226,0.14); border-radius:28px; background:rgba(237,234,226,0.03); z-index:2;"></div>
+
+  <!-- consumed segments -->
+  <div data-object="true" data-object-type="shape seg" style="--d:.95s; position:absolute; left:104px; top:676px; width:280px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(138,184,255,0.75), rgba(138,184,255,0.35)); z-index:3;"></div>
+  <div data-object="true" data-object-type="shape seg" style="--d:1.15s; position:absolute; left:404px; top:676px; width:220px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(216,243,78,0.75), rgba(216,243,78,0.35)); z-index:3;"></div>
+  <div data-object="true" data-object-type="shape seg" style="--d:1.35s; position:absolute; left:644px; top:676px; width:300px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(255,138,92,0.75), rgba(255,138,92,0.35)); z-index:3;"></div>
+
+  <!-- remaining fuel, pulsing -->
+  <div data-object="true" data-object-type="shape drain" style="--d:1.55s; position:absolute; left:964px; top:676px; width:412px; height:40px; border-radius:20px; background:linear-gradient(90deg, rgba(216,243,78,0.5), rgba(216,243,78,0.08)); z-index:3;"></div>
+
+  <!-- segment labels -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:104px; top:756px; width:280px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(138,184,255,0.8);">議事録</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:404px; top:756px; width:220px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(216,243,78,0.8);">メール</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:644px; top:756px; width:300px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(255,138,92,0.8);">ビジュアル</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:964px; top:756px; width:412px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.18em; color:rgba(237,234,226,0.4);">まだ残っている</div>
+
+  <!-- example -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.85s; position:absolute; left:96px; top:876px; width:1728px; z-index:10; font-size:32px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.6);">
+    例：メールの下書き1通で、これくらい<span style="color:var(--paper); font-weight:700;">減ります。</span>
+  </div>
+
+  <!-- bottom meta -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:2.05s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
+    回数制限ではなく、使った分だけ減る
+  </div>
+
+</div>
+</div><div class="slide" data-i="14">
+<div class="slide-container sc" data-screen-label="11 Vocab — chat" style="position:relative; width:1920px; height:1080px; overflow:hidden; background:#0B0C0E;">
+
+  <!-- glow -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:1100px; top:280px; width:700px; height:520px; background:radial-gradient(circle at 50% 45%, rgba(201,166,255,0.10) 0%, transparent 65%); z-index:1;"></div>
+
+  <!-- tag -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
+    覚えることば 4／4
+  </div>
+
+  <!-- hairline -->
+  <div data-object="true" data-object-type="shape rule" style="--d:.15s; position:absolute; left:96px; top:158px; width:420px; height:2px; background:rgba(216,243,78,0.55); z-index:5;"></div>
+
+  <!-- headline -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
+    チャットで依頼<span style="color:var(--st-deck);">.</span>
+  </div>
+
+  <!-- definition -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:452px; width:1500px; z-index:10; font-size:44px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
+    グループチャットに1回書くだけで、<span style="color:var(--paper); font-weight:700;">担当が分かれます。</span>
+  </div>
+
+  <!-- chat mock: panel -->
+  <div data-object="true" data-object-type="shape" style="position:absolute; left:96px; top:600px; width:1180px; height:252px; border:1px solid rgba(237,234,226,0.12); border-radius:16px; background:rgba(237,234,226,0.025); z-index:2;"></div>
+
+  <!-- your bubble (right-aligned inside panel) -->
+  <div data-object="true" data-object-type="shape msg" style="--d:.9s; position:absolute; left:560px; top:628px; width:684px; height:72px; border-radius:14px 14px 4px 14px; background:rgba(245,239,224,0.10); border:1px solid rgba(245,239,224,0.25); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox msg" style="--d:.95s; position:absolute; left:588px; top:640px; width:628px; z-index:10; font-size:30px; font-weight:700; color:var(--paper); line-height:1.3;">
+    これまとめて
+  </div>
+
+  <!-- reply row: three small avatars + typing dots -->
+  <div data-object="true" data-object-type="shape msg" style="--d:1.3s; position:absolute; left:132px; top:736px; width:14px; height:14px; border-radius:50%; background:var(--st-memo); z-index:4;"></div>
+  <div data-object="true" data-object-type="shape msg" style="--d:1.38s; position:absolute; left:158px; top:736px; width:14px; height:14px; border-radius:50%; background:var(--st-mail); z-index:4;"></div>
+  <div data-object="true" data-object-type="shape msg" style="--d:1.46s; position:absolute; left:184px; top:736px; width:14px; height:14px; border-radius:50%; background:var(--st-visual); z-index:4;"></div>
+
+  <div data-object="true" data-object-type="shape msg" style="--d:1.55s; position:absolute; left:224px; top:724px; width:300px; height:40px; border-radius:20px; background:rgba(237,234,226,0.05); border:1px solid rgba(237,234,226,0.12); z-index:3;"></div>
+  <div data-object="true" data-object-type="textbox msg" style="--d:1.6s; position:absolute; left:248px; top:730px; width:252px; z-index:10; display:flex; gap:10px; align-items:center;">
+    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:rgba(237,234,226,0.7);display:block;"></span>
+    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:rgba(237,234,226,0.7);display:block;animation-delay:.2s;"></span>
+    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:rgba(237,234,226,0.7);display:block;animation-delay:.4s;"></span>
+  </div>
+
+  <!-- right annotation -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:1360px; top:640px; width:464px; z-index:10; text-align:right;">
+    <div style="font-size:40px; font-weight:900; color:var(--paper); line-height:1.35; letter-spacing:-0.01em;">書くだけ。<br>
+    <span style="color:var(--st-deck);">担当分けは自動。</span></div>
+  </div>
+
+  <!-- bottom meta -->
+  <div data-object="true" data-object-type="textbox rv" style="--d:2.0s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
+    1回書けば、担当が分かれる
   </div>
 
 </div>
@@ -1293,7 +1293,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Meet the team
+    チームの紹介
   </div>
 
   <!-- product name -->
@@ -1303,8 +1303,8 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- subline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.7s; position:absolute; left:96px; top:560px; width:1500px; z-index:10; font-size:46px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.72);">
-    用途別のAI社員を、チームに迎える。<br>
-    <span style="color:var(--paper); font-weight:700;">グループチャットで依頼し、分担する。</span>
+    仕事ごとに担当のAI社員を雇うイメージ。<br>
+    <span style="color:var(--paper); font-weight:700;">グループチャットで頼むと、担当が分かれて動きます。</span>
   </div>
 
   <!-- four role chips, staggered -->
@@ -1315,14 +1315,14 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="textbox pop" style="--d:1.2s; position:absolute; left:494px; top:794px; width:290px; z-index:10; font-size:30px; font-weight:700; color:var(--st-mail); line-height:1.3;">メール担当</div>
 
   <div data-object="true" data-object-type="shape pop" style="--d:1.3s; position:absolute; left:844px; top:790px; width:360px; height:118px; border:1.5px solid rgba(255,138,92,0.5); border-radius:6px; background:rgba(255,138,92,0.06); z-index:3;"></div>
-  <div data-object="true" data-object-type="textbox pop" style="--d:1.35s; position:absolute; left:868px; top:812px; width:320px; z-index:10; font-size:30px; font-weight:700; color:var(--st-visual); line-height:1.3;">ビジュアル担当</div>
+  <div data-object="true" data-object-type="textbox pop" style="--d:1.35s; position:absolute; left:868px; top:812px; width:320px; z-index:10; font-size:30px; font-weight:700; color:var(--st-visual); line-height:1.3;">画像担当</div>
 
   <div data-object="true" data-object-type="shape pop" style="--d:1.45s; position:absolute; left:1252px; top:772px; width:330px; height:118px; border:1.5px solid rgba(201,166,255,0.5); border-radius:6px; background:rgba(201,166,255,0.06); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox pop" style="--d:1.5s; position:absolute; left:1276px; top:794px; width:290px; z-index:10; font-size:30px; font-weight:700; color:var(--st-deck); line-height:1.3;">スライド担当</div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.7s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    One chat &middot; four roles &middot; zero handoffs
+    ひとつのチャットに、4人の担当
   </div>
 
 </div>
@@ -1334,7 +1334,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Where GenTeam lives
+    どこで使えるか
   </div>
 
   <!-- hairline -->
@@ -1342,7 +1342,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:248px; width:1740px; z-index:10; font-size:98px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
-    ひとつの画面に、<br><span style="color:var(--lime);">とどまらない。</span>
+    パソコンでもスマホでも、<br><span style="color:var(--lime);">同じように使えます。</span>
   </div>
 
   <!-- three surface cards, staggered -->
@@ -1350,32 +1350,32 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="shape rv" style="--d:.7s; position:absolute; left:96px; top:560px; width:440px; height:200px; border:1px solid rgba(237,234,226,0.14); border-radius:12px; background:rgba(237,234,226,0.03); z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.75s; position:absolute; left:132px; top:592px; width:368px; z-index:10;">
     <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:var(--st-memo); margin-bottom:16px;">Web</div>
-    <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.35;">ブラウザで<br>そのまま開く。</div>
+    <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.35;">ブラウザで、<br>そのまま開けます。</div>
   </div>
 
   <!-- card 2 phone -->
   <div data-object="true" data-object-type="shape rv" style="--d:.9s; position:absolute; left:576px; top:540px; width:440px; height:200px; border:1px solid rgba(237,234,226,0.14); border-radius:12px; background:rgba(237,234,226,0.03); z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.95s; position:absolute; left:612px; top:572px; width:368px; z-index:10;">
     <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:var(--st-visual); margin-bottom:16px;">Phone</div>
-    <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.35;">スマホのアプリで<br>確認できる。</div>
+    <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.35;">スマホのアプリでも<br>確認できます。</div>
   </div>
 
   <!-- card 3 desktop super app -->
   <div data-object="true" data-object-type="shape rv" style="--d:1.1s; position:absolute; left:1056px; top:560px; width:568px; height:200px; border:1.5px solid rgba(216,243,78,0.4); border-radius:12px; background:rgba(216,243,78,0.05); z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.15s; position:absolute; left:1092px; top:588px; width:496px; z-index:10;">
     <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.28em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">Desktop &middot; Super App</div>
-    <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.35;">デスクトップのSuper Appで<br><span style="color:var(--lime);">タスクが並ぶ。</span></div>
+    <div style="font-size:34px; font-weight:700; color:var(--paper); line-height:1.35;">パソコン用アプリなら<br><span style="color:var(--lime);">仕事が一覧で並びます。</span></div>
   </div>
 
   <!-- sync line -->
   <div data-object="true" data-object-type="shape sync" style="position:absolute; left:96px; top:812px; width:1528px; height:2px; background:linear-gradient(90deg, rgba(216,243,78,0.7) 0%, rgba(216,243,78,0.1) 100%); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:96px; top:840px; width:1728px; z-index:10; font-size:31px; font-weight:400; line-height:1.5; color:rgba(237,234,226,0.72);">
-    どこから開いても、<span style="color:var(--paper); font-weight:700;">同じタスク・同じ成果物。</span>
+    どこから開いても、中身は<span style="color:var(--paper); font-weight:700;">同じです。</span>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    One team &middot; every screen
+    どの画面からでも、同じチーム
   </div>
 
 </div>
@@ -1387,7 +1387,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Before the demo
+    実演の前に
   </div>
 
   <!-- hairline -->
@@ -1395,7 +1395,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:248px; width:1740px; z-index:10; font-size:96px; font-weight:900; line-height:1.16; letter-spacing:-0.012em; color:var(--paper);">
-    準備は<span style="color:var(--lime);">ひとつだけ。</span>
+    むずかしい準備は<span style="color:var(--lime);">いりません。</span>
   </div>
 
   <!-- diagram: download flow -->
@@ -1428,12 +1428,12 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- key sentence -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.95s; position:absolute; left:96px; top:756px; width:1728px; z-index:10; font-size:40px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.72);">
-    希望者は<span style="color:var(--paper); font-weight:700;">事前ダウンロードが快適</span>。<span style="color:var(--lime); font-weight:700;">当日はどちらでも。</span>
+    希望する方は<span style="color:var(--paper); font-weight:700;">アプリを入れておくと見やすいです</span>。<span style="color:var(--lime); font-weight:700;">ブラウザだけでも参加できます。</span>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:2.15s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Download now &middot; or just show up
+    今入れてもいいし、当日そのまま来てもいい
   </div>
 
 </div>
@@ -1442,7 +1442,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    How it works
+    使い方
   </div>
 
   <!-- headline -->
@@ -1454,7 +1454,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- STEP 1 -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.55s; position:absolute; left:96px; top:470px; width:430px; z-index:10;">
     <div style="font-family:var(--mono); font-size:88px; font-weight:600; line-height:1; color:rgba(237,234,226,0.22); letter-spacing:-0.03em;">01</div>
-    <div style="margin-top:26px; font-size:42px; font-weight:700; line-height:1.4; color:var(--paper);">ひとつの依頼を<br>グループに投げる。</div>
+    <div style="margin-top:26px; font-size:42px; font-weight:700; line-height:1.4; color:var(--paper);">やってほしいことを<br>グループチャットに書く。</div>
   </div>
 
   <!-- arrow 1 -->
@@ -1464,7 +1464,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- STEP 2 -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.95s; position:absolute; left:740px; top:470px; width:430px; z-index:10;">
     <div style="font-family:var(--mono); font-size:88px; font-weight:600; line-height:1; color:rgba(237,234,226,0.22); letter-spacing:-0.03em;">02</div>
-    <div style="margin-top:26px; font-size:42px; font-weight:700; line-height:1.4; color:var(--paper);">担当のAI社員が<br><span style="color:var(--lime);">勝手に引き受ける。</span></div>
+    <div style="margin-top:26px; font-size:42px; font-weight:700; line-height:1.4; color:var(--paper);">担当のAI社員が、<br><span style="color:var(--lime);">自分で引き受ける。</span></div>
   </div>
 
   <!-- arrow 2 -->
@@ -1474,7 +1474,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- STEP 3 -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.35s; position:absolute; left:1390px; top:470px; width:434px; z-index:10;">
     <div style="font-family:var(--mono); font-size:88px; font-weight:600; line-height:1; color:rgba(237,234,226,0.22); letter-spacing:-0.03em;">03</div>
-    <div style="margin-top:26px; font-size:42px; font-weight:700; line-height:1.4; color:var(--paper);">成果物が、<br><span style="color:var(--lime);">スレッドに並ぶ。</span></div>
+    <div style="margin-top:26px; font-size:42px; font-weight:700; line-height:1.4; color:var(--paper);">できたものが、<br><span style="color:var(--lime);">チャットに並ぶ。</span></div>
   </div>
 
   <!-- role strip under steps -->
@@ -1482,13 +1482,13 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <div data-object="true" data-object-type="textbox rv" style="--d:1.55s; position:absolute; left:136px; top:782px; width:280px; z-index:10; font-size:29px; font-weight:700; color:var(--st-memo);">会議メモ</div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.65s; position:absolute; left:480px; top:782px; width:240px; z-index:10; font-size:29px; font-weight:700; color:var(--st-mail);">メール案</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.75s; position:absolute; left:780px; top:782px; width:330px; z-index:10; font-size:29px; font-weight:700; color:var(--st-visual);">告知ビジュアル</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.85s; position:absolute; left:1170px; top:782px; width:280px; z-index:10; font-size:29px; font-weight:700; color:var(--st-deck);">スライド骨子</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.95s; position:absolute; left:1520px; top:782px; width:260px; z-index:10; font-size:29px; font-weight:400; color:rgba(237,234,226,0.45); line-height:1.4;">＋ あなたが<br>承認する。</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.75s; position:absolute; left:780px; top:782px; width:330px; z-index:10; font-size:29px; font-weight:700; color:var(--st-visual);">告知用の画像</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.85s; position:absolute; left:1170px; top:782px; width:280px; z-index:10; font-size:29px; font-weight:700; color:var(--st-deck);">スライドの構成案</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.95s; position:absolute; left:1520px; top:782px; width:260px; z-index:10; font-size:29px; font-weight:400; color:rgba(237,234,226,0.45); line-height:1.4;">最後にあなたが<br>確認してOKを出す。</div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:2.1s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    You assign &middot; they split it up
+    頼むだけで、担当が分かれる
   </div>
 
 </div>
@@ -1500,19 +1500,19 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Workshop &middot; build your own
+    実習・自分で作ってみる
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.25s; position:absolute; left:92px; top:230px; width:1740px; z-index:10; font-size:92px; font-weight:900; line-height:1.12; letter-spacing:-0.012em; color:var(--paper);">
-    エージェントは、<span style="color:var(--lime);">一文で作れる。</span>
+    AI社員は、<span style="color:var(--lime);">文章1つで作れます。</span>
   </div>
 
   <!-- three-step rail -->
   <!-- step 1 -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.6s; position:absolute; left:96px; top:470px; width:400px; z-index:10;">
     <div style="font-family:var(--mono); font-size:76px; font-weight:600; line-height:1; color:rgba(237,234,226,0.2); letter-spacing:-0.03em;">01</div>
-    <div style="margin-top:20px; font-size:38px; font-weight:700; line-height:1.4; color:var(--paper);">名と役割を書く。</div>
+    <div style="margin-top:20px; font-size:38px; font-weight:700; line-height:1.4; color:var(--paper);">名前と役割を書く。</div>
   </div>
 
   <div data-object="true" data-object-type="shape arrowline" style="--d:.85s; position:absolute; left:520px; top:548px; width:96px; height:3px; background:linear-gradient(90deg, rgba(216,243,78,0.9), rgba(216,243,78,0.1)); z-index:5;"></div>
@@ -1521,7 +1521,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- step 2 -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:672px; top:470px; width:400px; z-index:10;">
     <div style="font-family:var(--mono); font-size:76px; font-weight:600; line-height:1; color:rgba(237,234,226,0.2); letter-spacing:-0.03em;">02</div>
-    <div style="margin-top:20px; font-size:38px; font-weight:700; line-height:1.4; color:var(--paper);">何に役立つか<br><span style="color:var(--lime);">自然言語で。</span></div>
+    <div style="margin-top:20px; font-size:38px; font-weight:700; line-height:1.4; color:var(--paper);">何をしてほしいかを<br><span style="color:var(--lime);">ふつうの日本語で書く。</span></div>
   </div>
 
   <div data-object="true" data-object-type="shape arrowline" style="--d:1.25s; position:absolute; left:1104px; top:548px; width:96px; height:3px; background:linear-gradient(90deg, rgba(216,243,78,0.9), rgba(216,243,78,0.1)); z-index:5;"></div>
@@ -1530,13 +1530,13 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- step 3 -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:1256px; top:470px; width:470px; z-index:10;">
     <div style="font-family:var(--mono); font-size:76px; font-weight:600; line-height:1; color:rgba(237,234,226,0.2); letter-spacing:-0.03em;">03</div>
-    <div style="margin-top:20px; font-size:38px; font-weight:700; line-height:1.4; color:var(--paper);">試して、直す。<br><span style="color:var(--lime);">それで完成。</span></div>
+    <div style="margin-top:20px; font-size:38px; font-weight:700; line-height:1.4; color:var(--paper);">試して、直す。<br><span style="color:var(--lime);">それだけで完成。</span></div>
   </div>
 
   <!-- example prompt box -->
   <div data-object="true" data-object-type="shape rv" style="--d:1.7s; position:absolute; left:96px; top:712px; width:1728px; height:132px; border-left:4px solid var(--lime); background:rgba(216,243,78,0.05); border-radius:0 8px 8px 0; z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:140px; top:734px; width:1640px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(216,243,78,0.8); margin-bottom:12px;">Example prompt</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(216,243,78,0.8); margin-bottom:12px;">書き方の例</div>
     <div style="font-size:30px; font-weight:400; line-height:1.4; color:rgba(237,234,226,0.85);">
       「毎週、業界の資金調達動向をまとめてくれるアナリストを作って」
     </div>
@@ -1544,7 +1544,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:2.05s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Role + job + test &middot; no code
+    役割と仕事を書くだけ。プログラムは不要
   </div>
 
 </div>
@@ -1553,12 +1553,12 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Demo &middot; one request, four hands
+    実演・ひとつ頼むと4人が動く
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.25s; position:absolute; left:92px; top:186px; width:1740px; z-index:10; font-size:80px; font-weight:900; line-height:1.15; letter-spacing:-0.01em; color:var(--paper);">
-    依頼は<span style="color:var(--lime);">ひとつだけ。</span>
+    頼むのは<span style="color:var(--lime);">ひとつだけ。</span>
   </div>
 
   <!-- request bubble -->
@@ -1584,7 +1584,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- lane 2 -->
   <div data-object="true" data-object-type="shape rv" style="--d:.95s; position:absolute; left:880px; top:428px; width:944px; height:76px; border-left:4px solid var(--st-mail); background:rgba(216,243,78,0.05); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:916px; top:440px; width:860px; z-index:10; display:flex; align-items:center; gap:28px;">
-    <div style="font-size:30px; font-weight:700; color:var(--st-mail); width:330px; flex:none; line-height:1.2;">メール文案</div>
+    <div style="font-size:30px; font-weight:700; color:var(--st-mail); width:330px; flex:none; line-height:1.2;">メールの下書き</div>
     <div style="flex:1; height:1px; background:linear-gradient(90deg, rgba(216,243,78,0.5), transparent);"></div>
     <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); flex:none;">MAIL</div>
   </div>
@@ -1592,7 +1592,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- lane 3 -->
   <div data-object="true" data-object-type="shape rv" style="--d:1.1s; position:absolute; left:880px; top:538px; width:944px; height:76px; border-left:4px solid var(--st-visual); background:rgba(255,138,92,0.05); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.15s; position:absolute; left:916px; top:550px; width:860px; z-index:10; display:flex; align-items:center; gap:28px;">
-    <div style="font-size:30px; font-weight:700; color:var(--st-visual); width:330px; flex:none; line-height:1.2;">告知ビジュアル</div>
+    <div style="font-size:30px; font-weight:700; color:var(--st-visual); width:330px; flex:none; line-height:1.2;">告知用の画像</div>
     <div style="flex:1; height:1px; background:linear-gradient(90deg, rgba(255,138,92,0.5), transparent);"></div>
     <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); flex:none;">VISUAL</div>
   </div>
@@ -1600,19 +1600,19 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- lane 4 -->
   <div data-object="true" data-object-type="shape rv" style="--d:1.25s; position:absolute; left:880px; top:648px; width:944px; height:76px; border-left:4px solid var(--st-deck); background:rgba(201,166,255,0.05); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.3s; position:absolute; left:916px; top:660px; width:860px; z-index:10; display:flex; align-items:center; gap:28px;">
-    <div style="font-size:30px; font-weight:700; color:var(--st-deck); width:330px; flex:none; line-height:1.2;">スライド骨子</div>
+    <div style="font-size:30px; font-weight:700; color:var(--st-deck); width:330px; flex:none; line-height:1.2;">スライドの構成案</div>
     <div style="flex:1; height:1px; background:linear-gradient(90deg, rgba(201,166,255,0.5), transparent);"></div>
     <div style="font-family:var(--mono); font-size:18px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); flex:none;">DECK</div>
   </div>
 
   <!-- bottom note -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:96px; top:880px; width:1728px; z-index:10; font-size:34px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.66);">
-    指示の往復も、引き継ぎも、催促もない。<span style="color:var(--paper); font-weight:700;">ひとつのスレッドで、完成まで。</span>
+    やりとりも、引き継ぎも、催促もいりません。<span style="color:var(--paper); font-weight:700;">1つのチャットの中で、最後までできます。</span>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Request once &middot; collect four times
+    頼むのは1回、返ってくるのは4つ
   </div>
 
 </div>
@@ -1625,7 +1625,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- LIVE tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:88px; width:700px; z-index:10; display:flex; align-items:center; gap:20px;">
     <div class="live-dot" style="width:16px; height:16px; border-radius:50%; background:var(--lime); box-shadow:0 0 24px rgba(216,243,78,0.8); flex:none;"></div>
-    <div style="font-family:var(--mono); font-size:24px; letter-spacing:0.42em; text-transform:uppercase; color:var(--lime);">Live Demo</div>
+    <div style="font-family:var(--mono); font-size:24px; letter-spacing:0.42em; text-transform:uppercase; color:var(--lime);">実演</div>
   </div>
 
   <!-- headline -->
@@ -1638,7 +1638,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="shape rv" style="--d:.5s; position:absolute; left:96px; top:420px; width:386px; height:330px; border:1.5px solid rgba(138,184,255,0.45); border-radius:10px; background:
     repeating-linear-gradient(45deg, rgba(138,184,255,0.03) 0 14px, transparent 14px 28px); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.55s; position:absolute; left:120px; top:444px; width:340px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(138,184,255,0.75); margin-bottom:10px;">Output 01</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(138,184,255,0.75); margin-bottom:10px;">できあがるもの1</div>
     <div style="font-size:32px; font-weight:700; color:var(--st-memo); line-height:1.3;">会議メモ整理</div>
   </div>
 
@@ -1646,7 +1646,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="shape rv" style="--d:.65s; position:absolute; left:522px; top:420px; width:386px; height:330px; border:1.5px solid rgba(216,243,78,0.45); border-radius:10px; background:
     repeating-linear-gradient(45deg, rgba(216,243,78,0.03) 0 14px, transparent 14px 28px); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.7s; position:absolute; left:546px; top:444px; width:340px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(216,243,78,0.75); margin-bottom:10px;">Output 02</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(216,243,78,0.75); margin-bottom:10px;">できあがるもの2</div>
     <div style="font-size:32px; font-weight:700; color:var(--st-mail); line-height:1.3;">メール案</div>
   </div>
 
@@ -1654,26 +1654,26 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="shape rv" style="--d:.8s; position:absolute; left:948px; top:420px; width:386px; height:330px; border:1.5px solid rgba(255,138,92,0.45); border-radius:10px; background:
     repeating-linear-gradient(45deg, rgba(255,138,92,0.03) 0 14px, transparent 14px 28px); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.85s; position:absolute; left:972px; top:444px; width:340px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(255,138,92,0.75); margin-bottom:10px;">Output 03</div>
-    <div style="font-size:32px; font-weight:700; color:var(--st-visual); line-height:1.3;">告知ビジュアル</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(255,138,92,0.75); margin-bottom:10px;">できあがるもの3</div>
+    <div style="font-size:32px; font-weight:700; color:var(--st-visual); line-height:1.3;">告知用の画像</div>
   </div>
 
   <!-- frame 4 -->
   <div data-object="true" data-object-type="shape rv" style="--d:.95s; position:absolute; left:1374px; top:420px; width:386px; height:330px; border:1.5px solid rgba(201,166,255,0.45); border-radius:10px; background:
     repeating-linear-gradient(45deg, rgba(201,166,255,0.03) 0 14px, transparent 14px 28px); z-index:3;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:1398px; top:444px; width:340px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(201,166,255,0.75); margin-bottom:10px;">Output 04</div>
-    <div style="font-size:32px; font-weight:700; color:var(--st-deck); line-height:1.3;">スライド骨子</div>
+    <div style="font-family:var(--mono); font-size:17px; letter-spacing:0.26em; text-transform:uppercase; color:rgba(201,166,255,0.75); margin-bottom:10px;">できあがるもの4</div>
+    <div style="font-size:32px; font-weight:700; color:var(--st-deck); line-height:1.3;">スライドの構成案</div>
   </div>
 
   <!-- bottom instruction -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.3s; position:absolute; left:96px; top:850px; width:1728px; z-index:10; font-size:34px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.66);">
-    この4枠が、さっきの依頼から<span style="color:var(--paper); font-weight:700;">そのまま埋まっていく</span>ところを見てください。
+    この4つが、さっきの頼みごとだけで<span style="color:var(--paper); font-weight:700;">埋まっていく</span>ところをご覧ください。
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Screen share &middot; GenTeam thread
+    ここから画面でお見せします
   </div>
 
 </div>
@@ -1682,12 +1682,12 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    While you're away
+    席を外している間
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.25s; position:absolute; left:92px; top:190px; width:1740px; z-index:10; font-size:92px; font-weight:900; line-height:1.15; letter-spacing:-0.01em; color:var(--paper);">
-    離席中も、<span style="color:var(--lime);">並行して。</span>
+    席を外している間も、<span style="color:var(--lime);">同時に進みます。</span>
   </div>
 
   <!-- progress rows -->
@@ -1707,17 +1707,17 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <!-- row labels -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.5s; position:absolute; left:1460px; top:448px; width:364px; z-index:10; text-align:right; font-size:28px; font-weight:700; color:var(--st-memo); line-height:1.3;">会議メモ整理</div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.7s; position:absolute; left:1460px; top:548px; width:364px; z-index:10; text-align:right; font-size:28px; font-weight:700; color:var(--st-mail); line-height:1.3;">メール案</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:1460px; top:648px; width:364px; z-index:10; text-align:right; font-size:28px; font-weight:700; color:var(--st-visual); line-height:1.3;">告知ビジュアル</div>
-  <div data-object="true" data-object-type="textbox rv" style="--d:1.1s; position:absolute; left:1460px; top:748px; width:364px; z-index:10; text-align:right; font-size:28px; font-weight:700; color:var(--st-deck); line-height:1.3;">スライド骨子</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:.9s; position:absolute; left:1460px; top:648px; width:364px; z-index:10; text-align:right; font-size:28px; font-weight:700; color:var(--st-visual); line-height:1.3;">告知用の画像</div>
+  <div data-object="true" data-object-type="textbox rv" style="--d:1.1s; position:absolute; left:1460px; top:748px; width:364px; z-index:10; text-align:right; font-size:28px; font-weight:700; color:var(--st-deck); line-height:1.3;">スライドの構成案</div>
 
   <!-- key point -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.6s; position:absolute; left:96px; top:880px; width:1728px; z-index:10; font-size:36px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.7);">
-    順番待ちの列じゃない。<span style="color:var(--paper); font-weight:700;">同時に走っている。</span>
+    順番待ちではありません。<span style="color:var(--paper); font-weight:700;">4つが同時に動いています。</span>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.8s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Four threads &middot; one night
+    4つが同時に、一晩で
   </div>
 
 </div>
@@ -1729,12 +1729,12 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Morning check-in
+    翌朝
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.25s; position:absolute; left:92px; top:190px; width:1740px; z-index:10; font-size:96px; font-weight:900; line-height:1.12; letter-spacing:-0.01em; color:var(--paper);">
-    朝、開いたら<span style="color:var(--lime);">もう揃っている。</span>
+    朝、チャットを開くと<span style="color:var(--lime);">もうできあがっています。</span>
   </div>
 
   <!-- thread stack: staggered cards -->
@@ -1743,7 +1743,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="textbox inl" style="--d:.6s; position:absolute; left:132px; top:486px; width:1100px; z-index:10; display:flex; align-items:center; gap:32px;">
     <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); width:110px; flex:none;">06:12</div>
     <div style="font-size:30px; font-weight:700; color:var(--st-memo); width:300px; flex:none; line-height:1.2;">会議メモ整理</div>
-    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">要点・アクション・次回アジェンダ、整形済み</div>
+    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">要点・やること・次回の議題まで、整理済み</div>
   </div>
 
   <!-- card 2 -->
@@ -1751,34 +1751,34 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
   <div data-object="true" data-object-type="textbox inl" style="--d:.8s; position:absolute; left:186px; top:612px; width:1100px; z-index:10; display:flex; align-items:center; gap:32px;">
     <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); width:110px; flex:none;">06:31</div>
     <div style="font-size:30px; font-weight:700; color:var(--st-mail); width:300px; flex:none; line-height:1.2;">メール案</div>
-    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">宛名・件名・本文、送れる状態まで</div>
+    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">宛名・件名・本文まで、送れる状態</div>
   </div>
 
   <!-- card 3 -->
   <div data-object="true" data-object-type="shape inl" style="--d:.95s; position:absolute; left:204px; top:722px; width:1180px; height:96px; background:rgba(255,138,92,0.06); border:1px solid rgba(255,138,92,0.3); border-radius:8px; z-index:3;"></div>
   <div data-object="true" data-object-type="textbox inl" style="--d:1.0s; position:absolute; left:240px; top:738px; width:1100px; z-index:10; display:flex; align-items:center; gap:32px;">
     <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); width:110px; flex:none;">06:47</div>
-    <div style="font-size:30px; font-weight:700; color:var(--st-visual); width:300px; flex:none; line-height:1.2;">告知ビジュアル</div>
-    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">SNS投稿用サイズで書き出し済み</div>
+    <div style="font-size:30px; font-weight:700; color:var(--st-visual); width:300px; flex:none; line-height:1.2;">告知用の画像</div>
+    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">SNSに投稿できるサイズで書き出し済み</div>
   </div>
 
   <!-- card 4 -->
   <div data-object="true" data-object-type="shape inl" style="--d:1.15s; position:absolute; left:258px; top:848px; width:1180px; height:96px; background:rgba(201,166,255,0.06); border:1px solid rgba(201,166,255,0.3); border-radius:8px; z-index:3;"></div>
   <div data-object="true" data-object-type="textbox inl" style="--d:1.2s; position:absolute; left:294px; top:864px; width:1100px; z-index:10; display:flex; align-items:center; gap:32px;">
     <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.2em; color:rgba(237,234,226,0.4); width:110px; flex:none;">07:03</div>
-    <div style="font-size:30px; font-weight:700; color:var(--st-deck); width:300px; flex:none; line-height:1.2;">スライド骨子</div>
-    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">構成案、次の打ち合わせにそのまま使える</div>
+    <div style="font-size:30px; font-weight:700; color:var(--st-deck); width:300px; flex:none; line-height:1.2;">スライドの構成案</div>
+    <div style="flex:1; font-size:26px; font-weight:400; color:rgba(237,234,226,0.55);">構成案。次の打ち合わせにそのまま使える</div>
   </div>
 
   <!-- right-side stamp -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:1500px; top:470px; width:320px; z-index:10; text-align:right;">
-    <div style="font-family:var(--mono); font-size:64px; font-weight:600; color:var(--lime); line-height:1; letter-spacing:-0.02em;">READY</div>
-    <div style="margin-top:14px; font-family:var(--mono); font-size:18px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">Before coffee</div>
+    <div style="font-family:var(--mono); font-size:64px; font-weight:600; color:var(--lime); line-height:1; letter-spacing:-0.02em;">できています</div>
+    <div style="margin-top:14px; font-family:var(--mono); font-size:18px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">コーヒーを淹れる前に</div>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.7s; position:absolute; left:96px; top:1000px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Thread = your inbox, already sorted
+    チャットが、整理済みの受信箱になる
   </div>
 
 </div>
@@ -1790,31 +1790,31 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Your move
+    ここからはあなた
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1500px; z-index:10; font-size:110px; font-weight:900; line-height:1.15; letter-spacing:-0.01em; color:var(--paper);">
-    仕上げは、<br><span style="color:var(--lime);">あなたの判断。</span>
+    最後に決めるのは、<br><span style="color:var(--lime);">あなたです。</span>
   </div>
 
   <!-- stamp box -->
   <div data-object="true" data-object-type="shape stamp" style="--d:.9s; position:absolute; left:1300px; top:560px; width:380px; height:180px; border:3px solid var(--lime); border-radius:10px; transform:rotate(-3deg); z-index:4;"></div>
   <div data-object="true" data-object-type="textbox stamp" style="--d:.95s; position:absolute; left:1330px; top:596px; width:320px; z-index:10; transform:rotate(-3deg);">
-    <div style="font-family:var(--mono); font-size:44px; font-weight:600; letter-spacing:0.1em; color:var(--lime); line-height:1;">APPROVED</div>
-    <div style="margin-top:12px; font-size:24px; font-weight:400; color:rgba(237,234,226,0.55); letter-spacing:0.05em;">by you, not by AI</div>
+    <div style="font-family:var(--mono); font-size:44px; font-weight:600; letter-spacing:0.1em; color:var(--lime); line-height:1;">あなたが承認</div>
+    <div style="margin-top:12px; font-size:24px; font-weight:400; color:rgba(237,234,226,0.55); letter-spacing:0.05em;">AIではなく、あなたが</div>
   </div>
 
   <!-- supporting lines -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:96px; top:700px; width:1100px; z-index:10; font-size:36px; font-weight:400; line-height:1.75; color:rgba(237,234,226,0.7);">
-    AIは下書きまで。<br>
-    <span style="color:var(--paper); font-weight:700;">出すかどうか、どう整えるかは人間。</span><br>
-    その線が引けたまま、速くなる。
+    AIがやるのは下書きまで。<br>
+    <span style="color:var(--paper); font-weight:700;">出すかどうか、どう直すかは人が決めます。</span><br>
+    決めるのは人のまま、仕事だけ早くなります。
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.5s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Speed with a human in the loop
+    決めるのは人。だから安心して速くできる
   </div>
 
 </div>
@@ -1826,7 +1826,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Your turn
+    おみやげ
   </div>
 
   <!-- headline -->
@@ -1840,15 +1840,15 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
     <span id="credit-count" style="font-family:var(--mono); font-size:150px; font-weight:600; color:var(--lime); line-height:0.95; letter-spacing:-0.03em;">1,000</span>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:.8s; position:absolute; left:100px; top:650px; width:960px; z-index:10; font-size:46px; font-weight:900; color:var(--paper); letter-spacing:-0.01em; line-height:1.15;">
-    クレジット、毎回付与。
+    クレジット、毎回お渡し。
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:100px; top:752px; width:860px; z-index:10; font-size:30px; font-weight:400; line-height:1.55; color:rgba(237,234,226,0.6);">
-    その分で、今日見たGenTeamを<span style="color:var(--paper); font-weight:700;">そのまま自分の仕事に。</span>
+    この分で、今日見たGenTeamを<span style="color:var(--paper); font-weight:700;">ご自分の仕事で試せます。</span>
   </div>
 
   <!-- right: QR card -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.7s; position:absolute; left:1216px; top:372px; width:470px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime);">
-    Scan &middot; Claim
+    読み取って受け取る
   </div>
   <div data-object="true" data-object-type="shape rv" style="--d:.85s; position:absolute; left:1216px; top:420px; width:470px; height:470px; background:#FFFFFF; border-radius:20px; box-shadow:0 24px 70px rgba(0,0,0,0.45); z-index:2;"></div>
   <div data-object="true" data-object-type="image rv" style="--d:.95s; position:absolute; left:1256px; top:460px; width:390px; height:390px; z-index:5;">
@@ -1857,11 +1857,11 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- bottom band -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.2s; position:absolute; left:96px; top:904px; width:1040px; z-index:10;">
-    <div style="font-size:30px; font-weight:700; color:var(--paper); line-height:1.25; margin-bottom:12px;">QRで、そのまま受け取れます。</div>
+    <div style="font-size:30px; font-weight:700; color:var(--paper); line-height:1.25; margin-bottom:12px;">QRコードから受け取れます。</div>
     <div style="font-family:var(--mono); font-size:19px; letter-spacing:0; line-height:1.5; color:rgba(237,234,226,0.42);">genspark.ai/genspark_event_gifts<br><span style="color:rgba(237,234,226,0.3);">?gift_credits_id=c6d736c5-7a97-4882-b006-bcbc76692263</span></div>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.3s; position:absolute; left:1216px; top:916px; width:470px; z-index:10; text-align:right; font-family:var(--mono); font-size:18px; letter-spacing:0.24em; text-transform:uppercase; color:rgba(216,243,78,0.7); line-height:1.5;">
-    Scan or open the link
+    QRコードか、下のリンクから
   </div>
 
 </div>
@@ -1870,18 +1870,18 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    What actually shrinks
+    本当に減るもの
   </div>
 
   <!-- struck-out phrase -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:240px; width:1740px; z-index:10; font-size:104px; font-weight:900; line-height:1.1; letter-spacing:-0.01em; color:rgba(237,234,226,0.3); position:relative;">
-    「仕事がなくなる」んじゃない。
+    「仕事がなくなる」
   </div>
   <div data-object="true" data-object-type="shape strike" style="--d:.7s; position:absolute; left:96px; top:318px; width:1180px; height:5px; background:rgba(216,243,78,0.85); z-index:11;"></div>
 
   <!-- the real claim -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.0s; position:absolute; left:92px; top:470px; width:1740px; z-index:10; font-size:120px; font-weight:900; line-height:1.15; letter-spacing:-0.015em; color:var(--paper);">
-    減るのは、<span style="color:var(--lime);">待つ時間。</span>
+    減るのは、<span style="color:var(--lime);">待ち時間。</span>
   </div>
 
   <!-- shrink bars: wait/switch shrink, keep holds -->
@@ -1894,21 +1894,21 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- three micro-points -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.4s; position:absolute; left:96px; top:740px; width:480px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">Wait</div>
-    <div style="font-size:30px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.65);">返信待ち・確認待ち・<br>手戻り待ち。</div>
+    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">待ち時間</div>
+    <div style="font-size:30px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.65);">返事待ち、確認待ち、<br>やり直し待ち。</div>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.55s; position:absolute; left:640px; top:740px; width:480px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">Switch</div>
-    <div style="font-size:30px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.65);">タスクの切り替えと<br>引き継ぎの手間。</div>
+    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">切り替え</div>
+    <div style="font-size:30px; font-weight:400; line-height:1.6; color:rgba(237,234,226,0.65);">作業を切り替える手間と<br>引き継ぎの手間。</div>
   </div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.7s; position:absolute; left:1184px; top:740px; width:540px; z-index:10;">
-    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">Keep</div>
-    <div style="font-size:30px; font-weight:700; line-height:1.6; color:var(--paper);">判断と責任は、<br>あなたのまま。</div>
+    <div style="font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--lime); margin-bottom:16px;">変わらないもの</div>
+    <div style="font-size:30px; font-weight:700; line-height:1.6; color:var(--paper);">決めることと責任は、<br>これまでどおりあなたのもの。</div>
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.95s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Less waiting &middot; same ownership
+    待ち時間は減る。責任はそのまま
   </div>
 
 </div>
@@ -1926,7 +1926,7 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Beyond this room
+    この先について
   </div>
 
   <!-- hairline -->
@@ -1934,24 +1934,24 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:250px; width:1600px; z-index:10; font-size:104px; font-weight:900; line-height:1.14; letter-spacing:-0.012em; color:var(--paper);">
-    今日はここまで。<br><span style="color:var(--lime);">次は、また会う。</span>
+    今日はここまでです。<br><span style="color:var(--lime);">またお会いしましょう。</span>
   </div>
 
   <!-- supporting -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.75s; position:absolute; left:96px; top:560px; width:1400px; z-index:10; font-size:38px; font-weight:400; line-height:1.7; color:rgba(237,234,226,0.7);">
-    Genspark側では、<span style="color:var(--paper); font-weight:700;">自主開催のイベント</span>も続けています。<br>
-    使った後の「どう回すか」を、同じ現場の人と話す場。
+    Gensparkでは、<span style="color:var(--paper); font-weight:700;">自主開催のイベント</span>も開いています。<br>
+    使ってみた後の「どう使いこなすか」を、同じ立場の人と話せる場です。
   </div>
 
   <!-- detail slot (to be filled verbally / on site) -->
   <div data-object="true" data-object-type="shape rv" style="--d:1.0s; position:absolute; left:96px; top:788px; width:1728px; height:96px; border-left:4px solid rgba(216,243,78,0.6); background:rgba(216,243,78,0.04); border-radius:0 8px 8px 0; z-index:2;"></div>
   <div data-object="true" data-object-type="textbox rv" style="--d:1.05s; position:absolute; left:140px; top:806px; width:1640px; z-index:10; font-size:30px; font-weight:400; line-height:1.4; color:rgba(237,234,226,0.6);">
-    次回のご案内は、<span style="color:var(--paper); font-weight:700;">この場で口頭でお伝えします。</span>&nbsp;&nbsp;詳細はSNS・公式のお知らせで。
+    次回のご案内は<span style="color:var(--paper); font-weight:700;">この場でお伝えします。</span>&nbsp;&nbsp;詳しくはSNSと公式のお知らせをご覧ください。
   </div>
 
   <!-- bottom meta -->
   <div data-object="true" data-object-type="textbox rv" style="--d:1.3s; position:absolute; left:96px; top:984px; width:1200px; z-index:10; font-family:var(--mono); font-size:19px; letter-spacing:0.3em; text-transform:uppercase; color:var(--muted);">
-    Follow the channel &middot; see you next time
+    次回もぜひご参加ください
   </div>
 
 </div>
@@ -1968,19 +1968,19 @@ body{font-family:'Yu Gothic UI','Yu Gothic','Meiryo','Noto Sans JP',system-ui,sa
 
   <!-- tag -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.05s; position:absolute; left:96px; top:96px; width:1000px; z-index:10; font-family:var(--mono); font-size:21px; letter-spacing:0.42em; text-transform:uppercase; color:var(--muted);">
-    Questions
+    質問の時間
   </div>
 
   <!-- headline -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.3s; position:absolute; left:92px; top:330px; width:1500px; z-index:10; font-size:150px; font-weight:900; line-height:1.05; letter-spacing:-0.015em; color:var(--paper);">
-    聞きたいことは、<br><span style="color:var(--lime);">今が早い。</span>
+    質問は、<br><span style="color:var(--lime);">いまのうちにどうぞ。</span>
   </div>
 
   <!-- restated thread -->
   <div data-object="true" data-object-type="textbox rv" style="--d:.8s; position:absolute; left:96px; top:760px; width:1500px; z-index:10; font-size:34px; font-weight:400; line-height:1.7; color:rgba(237,234,226,0.6);">
-    寝てる間に動く。<br>
-    朝、揃っている。<br>
-    <span style="color:var(--paper); font-weight:700;">判断だけ、あなたが。</span>
+    寝ている間に、AIが動く。<br>
+    朝には、できあがっている。<br>
+    <span style="color:var(--paper); font-weight:700;">決めるのは、あなた。</span>
   </div>
 
   <!-- bottom meta -->
